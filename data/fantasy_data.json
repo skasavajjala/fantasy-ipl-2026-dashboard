@@ -108,11 +108,11 @@
         }
       ],
       "last_match": {
-        "points": 175.5,
-        "captain": "KL Rahul",
-        "vc": "Prabhsimran Singh",
-        "playing_count": 4,
-        "transfers": 4,
+        "points": 99.0,
+        "captain": "H. Klaasen",
+        "vc": "S. Gill",
+        "transfers": 5,
+        "playing_count": null,
         "boosters": []
       }
     },
@@ -171,11 +171,11 @@
         }
       ],
       "last_match": {
-        "points": 414.5,
-        "captain": "C. Connolly",
-        "vc": "K. Rahul",
-        "playing_count": 5,
-        "transfers": 6,
+        "points": 125.0,
+        "captain": "H. Klaasen",
+        "vc": "A. Sharma",
+        "transfers": 5,
+        "playing_count": null,
         "boosters": []
       }
     },
@@ -234,11 +234,11 @@
         }
       ],
       "last_match": {
-        "points": 391.0,
-        "captain": "P. Arya",
-        "vc": "S. Iyer",
-        "playing_count": 8,
-        "transfers": 4,
+        "points": 138.0,
+        "captain": "A. Sharma",
+        "vc": "I. Kishan",
+        "transfers": 6,
+        "playing_count": null,
         "boosters": []
       }
     },
@@ -297,11 +297,11 @@
         }
       ],
       "last_match": {
-        "points": 330.0,
-        "captain": "C. Connolly",
-        "vc": "A. Patel",
-        "playing_count": 8,
+        "points": 165.0,
+        "captain": "J. Buttler",
+        "vc": "T. Head",
         "transfers": 5,
+        "playing_count": null,
         "boosters": []
       }
     },
@@ -360,11 +360,11 @@
         }
       ],
       "last_match": {
-        "points": 293.5,
-        "captain": "P. Arya",
-        "vc": "K. Rahul",
-        "playing_count": 7,
+        "points": 96.0,
+        "captain": "T. Head",
+        "vc": "J. Buttler",
         "transfers": 6,
+        "playing_count": null,
         "boosters": []
       }
     },
@@ -423,11 +423,11 @@
         }
       ],
       "last_match": {
-        "points": 327.0,
-        "captain": "K. Rahul",
-        "vc": "P. Arya",
-        "playing_count": 8,
+        "points": 155.0,
+        "captain": "T. Head",
+        "vc": "J. Buttler",
         "transfers": 6,
+        "playing_count": null,
         "boosters": []
       }
     },
@@ -486,11 +486,11 @@
         }
       ],
       "last_match": {
-        "points": 959.0,
-        "captain": "P. Singh",
-        "vc": "K. Rahul",
-        "playing_count": 6,
-        "transfers": 11,
+        "points": 92.0,
+        "captain": "T. Head",
+        "vc": "J. Buttler",
+        "transfers": 7,
+        "playing_count": null,
         "boosters": []
       }
     }
