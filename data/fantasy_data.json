@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-11T23:38:26.229595",
+  "last_updated": "2026-05-11T23:48:30.402273",
   "last_match": {
     "name": "Match 55",
     "teams": "PBKS vs DC",
@@ -46,10 +46,10 @@
       "usrscoid": "71f3ad4a-a0d1-70c1-cf04-a4e43818bc3a",
       "is_me": true,
       "total_points": 8451.0,
-      "transfers_used": 0,
+      "transfers_used": 106,
       "transfers_left": 54,
       "transfers_this_match": 4,
-      "transfer_efficiency": null,
+      "transfer_efficiency": 79.7,
       "boosters_used": [
         {
           "id": 3,
@@ -78,6 +78,47 @@
         }
       ],
       "boosters_remaining": 5,
+      "matches": [
+        {
+          "match_name": "Match 55",
+          "match_num": 55,
+          "transfers": 4,
+          "teams": "PBKS vs DC",
+          "points": 175.5,
+          "captain": "K. Rahul",
+          "vc": "P. Singh",
+          "wk": 4,
+          "bat": 3,
+          "ar": 1,
+          "bowl": 3
+        },
+        {
+          "match_name": "Match 54",
+          "match_num": 54,
+          "transfers": 4,
+          "teams": "RCB vs MI",
+          "points": 272.0,
+          "captain": "V. Kohli",
+          "vc": "R. Rickelton",
+          "wk": 4,
+          "bat": 3,
+          "ar": 1,
+          "bowl": 3
+        },
+        {
+          "match_name": "Match 53",
+          "match_num": 53,
+          "transfers": 3,
+          "teams": "CSK vs LSG",
+          "points": 185.5,
+          "captain": "M. Marsh",
+          "vc": "S. Samson",
+          "wk": 3,
+          "bat": 3,
+          "ar": 2,
+          "bowl": 3
+        }
+      ],
       "last_match": {
         "points": 175.5,
         "captain": "KL Rahul",
@@ -98,17 +139,54 @@
       "transfers_left": 77,
       "transfers_this_match": 6,
       "transfer_efficiency": 98.3,
-      "boosters_used": [
+      "boosters_used": 6,
+      "boosters_remaining": 4,
+      "matches": [
         {
-          "count": 6
+          "match_name": "Match 55",
+          "match_num": 55,
+          "transfers": 6,
+          "teams": "PBKS vs DC",
+          "points": 414.5,
+          "captain": "C. Connolly",
+          "vc": "K. Rahul",
+          "wk": 1,
+          "bat": 4,
+          "ar": 3,
+          "bowl": 3
+        },
+        {
+          "match_name": "Match 54",
+          "match_num": 54,
+          "transfers": 3,
+          "teams": "RCB vs MI",
+          "points": 442.0,
+          "captain": "V. Kohli",
+          "vc": "R. Rickelton",
+          "wk": 1,
+          "bat": 5,
+          "ar": 1,
+          "bowl": 4
+        },
+        {
+          "match_name": "Match 53",
+          "match_num": 53,
+          "transfers": 5,
+          "teams": "CSK vs LSG",
+          "points": 204.5,
+          "captain": "S. Samson",
+          "vc": "N. Pooran",
+          "wk": 2,
+          "bat": 3,
+          "ar": 2,
+          "bowl": 4
         }
       ],
-      "boosters_remaining": 4,
       "last_match": {
         "points": 414.5,
         "captain": "C. Connolly",
         "vc": "K. Rahul",
-        "playing_count": 11,
+        "playing_count": 8,
         "transfers": 6,
         "boosters": []
       }
@@ -124,17 +202,54 @@
       "transfers_left": 80,
       "transfers_this_match": 4,
       "transfer_efficiency": 98.2,
-      "boosters_used": [
+      "boosters_used": 2,
+      "boosters_remaining": 8,
+      "matches": [
         {
-          "count": 2
+          "match_name": "Match 55",
+          "match_num": 55,
+          "transfers": 4,
+          "teams": "PBKS vs DC",
+          "points": 391.0,
+          "captain": "P. Arya",
+          "vc": "S. Iyer",
+          "wk": 1,
+          "bat": 5,
+          "ar": 2,
+          "bowl": 3
+        },
+        {
+          "match_name": "Match 54",
+          "match_num": 54,
+          "transfers": 6,
+          "teams": "RCB vs MI",
+          "points": 341.0,
+          "captain": "J. Bethell",
+          "vc": "R. Sharma",
+          "wk": 1,
+          "bat": 5,
+          "ar": 1,
+          "bowl": 4
+        },
+        {
+          "match_name": "Match 53",
+          "match_num": 53,
+          "transfers": 5,
+          "teams": "CSK vs LSG",
+          "points": 459.5,
+          "captain": "N. Pooran",
+          "vc": "S. Samson",
+          "wk": 3,
+          "bat": 3,
+          "ar": 2,
+          "bowl": 3
         }
       ],
-      "boosters_remaining": 8,
       "last_match": {
         "points": 391.0,
         "captain": "P. Arya",
         "vc": "S. Iyer",
-        "playing_count": 11,
+        "playing_count": 5,
         "transfers": 4,
         "boosters": []
       }
@@ -150,17 +265,54 @@
       "transfers_left": 78,
       "transfers_this_match": 5,
       "transfer_efficiency": 94.1,
-      "boosters_used": [
+      "boosters_used": 4,
+      "boosters_remaining": 6,
+      "matches": [
         {
-          "count": 4
+          "match_name": "Match 55",
+          "match_num": 55,
+          "transfers": 5,
+          "teams": "PBKS vs DC",
+          "points": 330.0,
+          "captain": "C. Connolly",
+          "vc": "A. Patel",
+          "wk": 2,
+          "bat": 3,
+          "ar": 3,
+          "bowl": 3
+        },
+        {
+          "match_name": "Match 54",
+          "match_num": 54,
+          "transfers": 5,
+          "teams": "RCB vs MI",
+          "points": 455.0,
+          "captain": "J. Bethell",
+          "vc": "R. Rickelton",
+          "wk": 1,
+          "bat": 5,
+          "ar": 2,
+          "bowl": 3
+        },
+        {
+          "match_name": "Match 53",
+          "match_num": 53,
+          "transfers": 4,
+          "teams": "CSK vs LSG",
+          "points": 319.0,
+          "captain": "S. Samson",
+          "vc": "M. Marsh",
+          "wk": 2,
+          "bat": 3,
+          "ar": 3,
+          "bowl": 3
         }
       ],
-      "boosters_remaining": 6,
       "last_match": {
         "points": 330.0,
         "captain": "C. Connolly",
         "vc": "A. Patel",
-        "playing_count": 11,
+        "playing_count": 5,
         "transfers": 5,
         "boosters": []
       }
@@ -176,17 +328,54 @@
       "transfers_left": 72,
       "transfers_this_match": 6,
       "transfer_efficiency": 85.0,
-      "boosters_used": [
+      "boosters_used": 4,
+      "boosters_remaining": 6,
+      "matches": [
         {
-          "count": 4
+          "match_name": "Match 55",
+          "match_num": 55,
+          "transfers": 6,
+          "teams": "PBKS vs DC",
+          "points": 293.5,
+          "captain": "P. Arya",
+          "vc": "K. Rahul",
+          "wk": 4,
+          "bat": 3,
+          "ar": 1,
+          "bowl": 3
+        },
+        {
+          "match_name": "Match 54",
+          "match_num": 54,
+          "transfers": 6,
+          "teams": "RCB vs MI",
+          "points": 388.5,
+          "captain": "R. Rickelton",
+          "vc": "J. Bethell",
+          "wk": 1,
+          "bat": 6,
+          "ar": 1,
+          "bowl": 3
+        },
+        {
+          "match_name": "Match 53",
+          "match_num": 53,
+          "transfers": 5,
+          "teams": "CSK vs LSG",
+          "points": 340.0,
+          "captain": "S. Samson",
+          "vc": "M. Marsh",
+          "wk": 3,
+          "bat": 4,
+          "ar": 1,
+          "bowl": 3
         }
       ],
-      "boosters_remaining": 6,
       "last_match": {
         "points": 293.5,
         "captain": "P. Arya",
         "vc": "K. Rahul",
-        "playing_count": 11,
+        "playing_count": 7,
         "transfers": 6,
         "boosters": []
       }
@@ -202,17 +391,54 @@
       "transfers_left": 78,
       "transfers_this_match": 6,
       "transfer_efficiency": 86.2,
-      "boosters_used": [
+      "boosters_used": 2,
+      "boosters_remaining": 8,
+      "matches": [
         {
-          "count": 2
+          "match_name": "Match 55",
+          "match_num": 55,
+          "transfers": 6,
+          "teams": "PBKS vs DC",
+          "points": 327.0,
+          "captain": "K. Rahul",
+          "vc": "P. Arya",
+          "wk": 3,
+          "bat": 3,
+          "ar": 2,
+          "bowl": 3
+        },
+        {
+          "match_name": "Match 54",
+          "match_num": 54,
+          "transfers": 4,
+          "teams": "RCB vs MI",
+          "points": 278.0,
+          "captain": "V. Kohli",
+          "vc": "R. Rickelton",
+          "wk": 2,
+          "bat": 4,
+          "ar": 2,
+          "bowl": 3
+        },
+        {
+          "match_name": "Match 53",
+          "match_num": 53,
+          "transfers": 5,
+          "teams": "CSK vs LSG",
+          "points": 303.0,
+          "captain": "S. Samson",
+          "vc": "M. Marsh",
+          "wk": 2,
+          "bat": 3,
+          "ar": 3,
+          "bowl": 3
         }
       ],
-      "boosters_remaining": 8,
       "last_match": {
         "points": 327.0,
         "captain": "K. Rahul",
         "vc": "P. Arya",
-        "playing_count": 11,
+        "playing_count": 6,
         "transfers": 6,
         "boosters": []
       }
@@ -228,12 +454,49 @@
       "transfers_left": 81,
       "transfers_this_match": 11,
       "transfer_efficiency": 86.4,
-      "boosters_used": [
+      "boosters_used": 5,
+      "boosters_remaining": 5,
+      "matches": [
         {
-          "count": 5
+          "match_name": "Match 55",
+          "match_num": 55,
+          "transfers": 11,
+          "teams": "PBKS vs DC",
+          "points": 959.0,
+          "captain": "P. Singh",
+          "vc": "K. Rahul",
+          "wk": 2,
+          "bat": 4,
+          "ar": 2,
+          "bowl": 3
+        },
+        {
+          "match_name": "Match 54",
+          "match_num": 54,
+          "transfers": 5,
+          "teams": "RCB vs MI",
+          "points": 240.0,
+          "captain": "V. Kohli",
+          "vc": "R. Rickelton",
+          "wk": 1,
+          "bat": 4,
+          "ar": 2,
+          "bowl": 4
+        },
+        {
+          "match_name": "Match 53",
+          "match_num": 53,
+          "transfers": 4,
+          "teams": "CSK vs LSG",
+          "points": 273.0,
+          "captain": "S. Samson",
+          "vc": "M. Marsh",
+          "wk": 2,
+          "bat": 3,
+          "ar": 2,
+          "bowl": 4
         }
       ],
-      "boosters_remaining": 5,
       "last_match": {
         "points": 959.0,
         "captain": "P. Singh",
@@ -248,37 +511,37 @@
     "1843790901": {
       "total_points": 8451.0,
       "rank": 1,
-      "scraped_at": "2026-05-11T23:38:26.229579"
+      "scraped_at": "2026-05-11T23:48:30.402226"
     },
     "1852810401": {
       "total_points": 8162.5,
       "rank": 2,
-      "scraped_at": "2026-05-11T23:38:26.229588"
+      "scraped_at": "2026-05-11T23:48:30.402241"
     },
     "1883650702": {
       "total_points": 7857.5,
       "rank": 3,
-      "scraped_at": "2026-05-11T23:38:26.229590"
+      "scraped_at": "2026-05-11T23:48:30.402243"
     },
     "1883130802": {
       "total_points": 7716.5,
       "rank": 4,
-      "scraped_at": "2026-05-11T23:38:26.229591"
+      "scraped_at": "2026-05-11T23:48:30.402245"
     },
     "1880300107": {
       "total_points": 7479.0,
       "rank": 5,
-      "scraped_at": "2026-05-11T23:38:26.229592"
+      "scraped_at": "2026-05-11T23:48:30.402246"
     },
     "1901660301": {
       "total_points": 7066.5,
       "rank": 6,
-      "scraped_at": "2026-05-11T23:38:26.229593"
+      "scraped_at": "2026-05-11T23:48:30.402269"
     },
     "1878020203": {
       "total_points": 6827.0,
       "rank": 7,
-      "scraped_at": "2026-05-11T23:38:26.229594"
+      "scraped_at": "2026-05-11T23:48:30.402271"
     }
   }
 }
