@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-11T23:48:30.402273",
+  "last_updated": "2026-05-12T08:10:44.276393",
   "last_match": {
     "name": "Match 55",
     "teams": "PBKS vs DC",
@@ -31,13 +31,13 @@
     ]
   },
   "next_match": {
-    "name": "Match 56",
+    "name": "Match 57",
     "teams": "\u2014",
     "date": "",
     "venue": ""
   },
   "last_gameday": 55,
-  "next_gameday": 56,
+  "next_gameday": 57,
   "members": [
     {
       "rank": 1,
@@ -45,11 +45,11 @@
       "temid": 1843790901,
       "usrscoid": "71f3ad4a-a0d1-70c1-cf04-a4e43818bc3a",
       "is_me": true,
-      "total_points": 8451.0,
-      "transfers_used": 106,
-      "transfers_left": 54,
+      "total_points": 8535.0,
+      "transfers_used": 111,
+      "transfers_left": 49,
       "transfers_this_match": 4,
-      "transfer_efficiency": 79.7,
+      "transfer_efficiency": 76.9,
       "boosters_used": [
         {
           "id": 3,
@@ -80,6 +80,19 @@
       "boosters_remaining": 5,
       "matches": [
         {
+          "match_name": "Match 56",
+          "match_num": 56,
+          "transfers": 5,
+          "teams": "GT vs SRH",
+          "points": 84.0,
+          "captain": "H. Klaasen",
+          "vc": "S. Gill",
+          "wk": 2,
+          "bat": 4,
+          "ar": 2,
+          "bowl": 3
+        },
+        {
           "match_name": "Match 55",
           "match_num": 55,
           "transfers": 4,
@@ -104,19 +117,6 @@
           "bat": 3,
           "ar": 1,
           "bowl": 3
-        },
-        {
-          "match_name": "Match 53",
-          "match_num": 53,
-          "transfers": 3,
-          "teams": "CSK vs LSG",
-          "points": 185.5,
-          "captain": "M. Marsh",
-          "vc": "S. Samson",
-          "wk": 3,
-          "bat": 3,
-          "ar": 2,
-          "bowl": 3
         }
       ],
       "last_match": {
@@ -134,14 +134,27 @@
       "temid": 1852810401,
       "usrscoid": "3880773782",
       "is_me": false,
-      "total_points": 8162.5,
-      "transfers_used": 83,
-      "transfers_left": 77,
+      "total_points": 8287.5,
+      "transfers_used": 88,
+      "transfers_left": 72,
       "transfers_this_match": 6,
-      "transfer_efficiency": 98.3,
+      "transfer_efficiency": 94.2,
       "boosters_used": 6,
       "boosters_remaining": 4,
       "matches": [
+        {
+          "match_name": "Match 56",
+          "match_num": 56,
+          "transfers": 5,
+          "teams": "GT vs SRH",
+          "points": 125.0,
+          "captain": "H. Klaasen",
+          "vc": "A. Sharma",
+          "wk": 1,
+          "bat": 3,
+          "ar": 4,
+          "bowl": 3
+        },
         {
           "match_name": "Match 55",
           "match_num": 55,
@@ -167,26 +180,13 @@
           "bat": 5,
           "ar": 1,
           "bowl": 4
-        },
-        {
-          "match_name": "Match 53",
-          "match_num": 53,
-          "transfers": 5,
-          "teams": "CSK vs LSG",
-          "points": 204.5,
-          "captain": "S. Samson",
-          "vc": "N. Pooran",
-          "wk": 2,
-          "bat": 3,
-          "ar": 2,
-          "bowl": 4
         }
       ],
       "last_match": {
         "points": 414.5,
         "captain": "C. Connolly",
         "vc": "K. Rahul",
-        "playing_count": 8,
+        "playing_count": 5,
         "transfers": 6,
         "boosters": []
       }
@@ -197,14 +197,27 @@
       "temid": 1883650702,
       "usrscoid": "d143cd6a-50b1-701e-e682-35763fc829ff",
       "is_me": false,
-      "total_points": 7857.5,
-      "transfers_used": 80,
-      "transfers_left": 80,
+      "total_points": 7995.5,
+      "transfers_used": 86,
+      "transfers_left": 74,
       "transfers_this_match": 4,
-      "transfer_efficiency": 98.2,
+      "transfer_efficiency": 93.0,
       "boosters_used": 2,
       "boosters_remaining": 8,
       "matches": [
+        {
+          "match_name": "Match 56",
+          "match_num": 56,
+          "transfers": 6,
+          "teams": "GT vs SRH",
+          "points": 138.0,
+          "captain": "A. Sharma",
+          "vc": "I. Kishan",
+          "wk": 2,
+          "bat": 4,
+          "ar": 2,
+          "bowl": 3
+        },
         {
           "match_name": "Match 55",
           "match_num": 55,
@@ -230,26 +243,13 @@
           "bat": 5,
           "ar": 1,
           "bowl": 4
-        },
-        {
-          "match_name": "Match 53",
-          "match_num": 53,
-          "transfers": 5,
-          "teams": "CSK vs LSG",
-          "points": 459.5,
-          "captain": "N. Pooran",
-          "vc": "S. Samson",
-          "wk": 3,
-          "bat": 3,
-          "ar": 2,
-          "bowl": 3
         }
       ],
       "last_match": {
         "points": 391.0,
         "captain": "P. Arya",
         "vc": "S. Iyer",
-        "playing_count": 5,
+        "playing_count": 8,
         "transfers": 4,
         "boosters": []
       }
@@ -260,14 +260,27 @@
       "temid": 1883130802,
       "usrscoid": "91530d2a-a061-70fe-f477-027bddaf8f7e",
       "is_me": false,
-      "total_points": 7716.5,
-      "transfers_used": 82,
-      "transfers_left": 78,
+      "total_points": 7881.5,
+      "transfers_used": 87,
+      "transfers_left": 73,
       "transfers_this_match": 5,
-      "transfer_efficiency": 94.1,
+      "transfer_efficiency": 90.6,
       "boosters_used": 4,
       "boosters_remaining": 6,
       "matches": [
+        {
+          "match_name": "Match 56",
+          "match_num": 56,
+          "transfers": 5,
+          "teams": "GT vs SRH",
+          "points": 165.0,
+          "captain": "J. Buttler",
+          "vc": "T. Head",
+          "wk": 1,
+          "bat": 4,
+          "ar": 2,
+          "bowl": 4
+        },
         {
           "match_name": "Match 55",
           "match_num": 55,
@@ -293,26 +306,13 @@
           "bat": 5,
           "ar": 2,
           "bowl": 3
-        },
-        {
-          "match_name": "Match 53",
-          "match_num": 53,
-          "transfers": 4,
-          "teams": "CSK vs LSG",
-          "points": 319.0,
-          "captain": "S. Samson",
-          "vc": "M. Marsh",
-          "wk": 2,
-          "bat": 3,
-          "ar": 3,
-          "bowl": 3
         }
       ],
       "last_match": {
         "points": 330.0,
         "captain": "C. Connolly",
         "vc": "A. Patel",
-        "playing_count": 5,
+        "playing_count": 8,
         "transfers": 5,
         "boosters": []
       }
@@ -323,14 +323,27 @@
       "temid": 1880300107,
       "usrscoid": "a1037d6a-60f1-70ee-b431-13f9c1503ea6",
       "is_me": false,
-      "total_points": 7479.0,
-      "transfers_used": 88,
-      "transfers_left": 72,
+      "total_points": 7575.0,
+      "transfers_used": 94,
+      "transfers_left": 66,
       "transfers_this_match": 6,
-      "transfer_efficiency": 85.0,
-      "boosters_used": 4,
-      "boosters_remaining": 6,
+      "transfer_efficiency": 80.6,
+      "boosters_used": 5,
+      "boosters_remaining": 5,
       "matches": [
+        {
+          "match_name": "Match 56",
+          "match_num": 56,
+          "transfers": 6,
+          "teams": "GT vs SRH",
+          "points": 96.0,
+          "captain": "T. Head",
+          "vc": "J. Buttler",
+          "wk": 3,
+          "bat": 3,
+          "ar": 2,
+          "bowl": 3
+        },
         {
           "match_name": "Match 55",
           "match_num": 55,
@@ -356,19 +369,6 @@
           "bat": 6,
           "ar": 1,
           "bowl": 3
-        },
-        {
-          "match_name": "Match 53",
-          "match_num": 53,
-          "transfers": 5,
-          "teams": "CSK vs LSG",
-          "points": 340.0,
-          "captain": "S. Samson",
-          "vc": "M. Marsh",
-          "wk": 3,
-          "bat": 4,
-          "ar": 1,
-          "bowl": 3
         }
       ],
       "last_match": {
@@ -386,14 +386,27 @@
       "temid": 1901660301,
       "usrscoid": "b1c33dea-e0c1-7000-8404-81a3f486e811",
       "is_me": false,
-      "total_points": 7066.5,
-      "transfers_used": 82,
-      "transfers_left": 78,
+      "total_points": 7221.5,
+      "transfers_used": 88,
+      "transfers_left": 72,
       "transfers_this_match": 6,
-      "transfer_efficiency": 86.2,
-      "boosters_used": 2,
-      "boosters_remaining": 8,
+      "transfer_efficiency": 82.1,
+      "boosters_used": 3,
+      "boosters_remaining": 7,
       "matches": [
+        {
+          "match_name": "Match 56",
+          "match_num": 56,
+          "transfers": 6,
+          "teams": "GT vs SRH",
+          "points": 155.0,
+          "captain": "T. Head",
+          "vc": "J. Buttler",
+          "wk": 2,
+          "bat": 3,
+          "ar": 3,
+          "bowl": 3
+        },
         {
           "match_name": "Match 55",
           "match_num": 55,
@@ -419,26 +432,13 @@
           "bat": 4,
           "ar": 2,
           "bowl": 3
-        },
-        {
-          "match_name": "Match 53",
-          "match_num": 53,
-          "transfers": 5,
-          "teams": "CSK vs LSG",
-          "points": 303.0,
-          "captain": "S. Samson",
-          "vc": "M. Marsh",
-          "wk": 2,
-          "bat": 3,
-          "ar": 3,
-          "bowl": 3
         }
       ],
       "last_match": {
         "points": 327.0,
         "captain": "K. Rahul",
         "vc": "P. Arya",
-        "playing_count": 6,
+        "playing_count": 8,
         "transfers": 6,
         "boosters": []
       }
@@ -449,14 +449,27 @@
       "temid": 1878020203,
       "usrscoid": "31339d2a-a0f1-7000-6174-eabf69600c33",
       "is_me": false,
-      "total_points": 6827.0,
-      "transfers_used": 79,
-      "transfers_left": 81,
+      "total_points": 6919.0,
+      "transfers_used": 86,
+      "transfers_left": 74,
       "transfers_this_match": 11,
-      "transfer_efficiency": 86.4,
+      "transfer_efficiency": 80.5,
       "boosters_used": 5,
       "boosters_remaining": 5,
       "matches": [
+        {
+          "match_name": "Match 56",
+          "match_num": 56,
+          "transfers": 7,
+          "teams": "GT vs SRH",
+          "points": 92.0,
+          "captain": "T. Head",
+          "vc": "J. Buttler",
+          "wk": 3,
+          "bat": 4,
+          "ar": 1,
+          "bowl": 3
+        },
         {
           "match_name": "Match 55",
           "match_num": 55,
@@ -482,26 +495,13 @@
           "bat": 4,
           "ar": 2,
           "bowl": 4
-        },
-        {
-          "match_name": "Match 53",
-          "match_num": 53,
-          "transfers": 4,
-          "teams": "CSK vs LSG",
-          "points": 273.0,
-          "captain": "S. Samson",
-          "vc": "M. Marsh",
-          "wk": 2,
-          "bat": 3,
-          "ar": 2,
-          "bowl": 4
         }
       ],
       "last_match": {
         "points": 959.0,
         "captain": "P. Singh",
         "vc": "K. Rahul",
-        "playing_count": 11,
+        "playing_count": 6,
         "transfers": 11,
         "boosters": []
       }
@@ -509,39 +509,39 @@
   ],
   "snapshot": {
     "1843790901": {
-      "total_points": 8451.0,
+      "total_points": 8535.0,
       "rank": 1,
-      "scraped_at": "2026-05-11T23:48:30.402226"
+      "scraped_at": "2026-05-12T08:10:44.276364"
     },
     "1852810401": {
-      "total_points": 8162.5,
+      "total_points": 8287.5,
       "rank": 2,
-      "scraped_at": "2026-05-11T23:48:30.402241"
+      "scraped_at": "2026-05-12T08:10:44.276383"
     },
     "1883650702": {
-      "total_points": 7857.5,
+      "total_points": 7995.5,
       "rank": 3,
-      "scraped_at": "2026-05-11T23:48:30.402243"
+      "scraped_at": "2026-05-12T08:10:44.276386"
     },
     "1883130802": {
-      "total_points": 7716.5,
+      "total_points": 7881.5,
       "rank": 4,
-      "scraped_at": "2026-05-11T23:48:30.402245"
+      "scraped_at": "2026-05-12T08:10:44.276387"
     },
     "1880300107": {
-      "total_points": 7479.0,
+      "total_points": 7575.0,
       "rank": 5,
-      "scraped_at": "2026-05-11T23:48:30.402246"
+      "scraped_at": "2026-05-12T08:10:44.276389"
     },
     "1901660301": {
-      "total_points": 7066.5,
+      "total_points": 7221.5,
       "rank": 6,
-      "scraped_at": "2026-05-11T23:48:30.402269"
+      "scraped_at": "2026-05-12T08:10:44.276390"
     },
     "1878020203": {
-      "total_points": 6827.0,
+      "total_points": 6919.0,
       "rank": 7,
-      "scraped_at": "2026-05-11T23:48:30.402271"
+      "scraped_at": "2026-05-12T08:10:44.276392"
     }
   }
 }
