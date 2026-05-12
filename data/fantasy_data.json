@@ -1,32 +1,20 @@
 {
-  "last_updated": "2026-05-12T08:32:36.527277",
+  "last_updated": "2026-05-12T08:34:42.346777",
   "last_match": {
-    "name": "Match 55",
-    "teams": "PBKS vs DC",
-    "result": "DC beat PBKS by 3 wickets",
-    "date": "2026-05-11",
-    "venue": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
+    "name": "Match 56",
+    "teams": "GT vs SRH",
+    "result": "Live",
+    "date": "2026-05-12",
+    "venue": "Narendra Modi Stadium, Ahmedabad",
     "participants": [
       {
-        "name": "Punjab Kings",
-        "name_eng": "Punjab Kings",
-        "short_name": "PBKS",
-        "short_name_eng": "PBKS",
-        "id": "1107",
-        "value": "210/5 (20.0)",
-        "firstup": "true",
-        "players_involved": []
+        "short_name": "GT",
+        "value": "Live",
+        "firstup": "true"
       },
       {
-        "name": "Delhi Capitals",
-        "name_eng": "Delhi Capitals",
-        "short_name": "DC",
-        "short_name_eng": "DC",
-        "id": "1109",
-        "value": "216/7 (19.0)",
-        "highlight": "true",
-        "now": "true",
-        "players_involved": []
+        "short_name": "SRH",
+        "value": "Chasing"
       }
     ]
   },
@@ -36,7 +24,7 @@
     "date": "2026-05-13",
     "venue": "Raipur"
   },
-  "last_gameday": 55,
+  "last_gameday": 56,
   "next_gameday": 57,
   "members": [
     {
