@@ -1,0 +1,7 @@
+data/auth_state.json
+data/raw_*.json
+data/sniffed_*.json
+__pycache__/
+*.pyc
+.DS_Store
+scraper.py
