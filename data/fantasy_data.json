@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-12T10:01:25.213175",
+  "last_updated": "2026-05-12T10:36:46.932893",
   "last_match": {
     "name": "Match 56",
     "teams": "GT vs SRH",
@@ -32,7 +32,7 @@
       "temid": 1843790901,
       "usrscoid": "71f3ad4a-a0d1-70c1-cf04-a4e43818bc3a",
       "is_me": true,
-      "total_points": 8807.0,
+      "total_points": 8815.0,
       "transfers_used": 111,
       "transfers_left": 49,
       "transfers_this_match": 5,
@@ -71,9 +71,9 @@
           "match_num": 56,
           "transfers": 5,
           "teams": "GT vs SRH",
-          "points": 356.0,
-          "captain": "H. Klaasen",
-          "vc": "S. Gill",
+          "points": 364.0,
+          "captain": "Heinrich Klaasen",
+          "vc": "Shubman Gill",
           "wk": 2,
           "bat": 4,
           "ar": 2,
@@ -107,9 +107,9 @@
         }
       ],
       "last_match": {
-        "points": 356.0,
-        "captain": "H. Klaasen",
-        "vc": "S. Gill",
+        "points": 364.0,
+        "captain": "Heinrich Klaasen",
+        "vc": "Shubman Gill",
         "transfers": 5,
         "playing_count": null,
         "boosters": []
@@ -121,12 +121,43 @@
       "temid": 1852810401,
       "usrscoid": "3880773782",
       "is_me": false,
-      "total_points": 8287.5,
+      "total_points": 8452.5,
       "transfers_used": 88,
       "transfers_left": 72,
-      "transfers_this_match": 6,
+      "transfers_this_match": 5,
       "transfer_efficiency": 94.2,
-      "boosters_used": 6,
+      "boosters_used": [
+        {
+          "id": 9,
+          "name": "Wildcard",
+          "gameday": 41
+        },
+        {
+          "id": 3,
+          "name": "Super Captain",
+          "gameday": 39
+        },
+        {
+          "id": 9,
+          "name": "Wildcard",
+          "gameday": 44
+        },
+        {
+          "id": 11,
+          "name": "Booster 11",
+          "gameday": 45
+        },
+        {
+          "id": 10,
+          "name": "Booster 10",
+          "gameday": 49
+        },
+        {
+          "id": 12,
+          "name": "Power Play",
+          "gameday": 52
+        }
+      ],
       "boosters_remaining": 4,
       "matches": [
         {
@@ -134,9 +165,9 @@
           "match_num": 56,
           "transfers": 5,
           "teams": "GT vs SRH",
-          "points": 125.0,
-          "captain": "H. Klaasen",
-          "vc": "A. Sharma",
+          "points": 290.0,
+          "captain": "Heinrich Klaasen",
+          "vc": "Abhishek Sharma",
           "wk": 1,
           "bat": 3,
           "ar": 4,
@@ -170,9 +201,9 @@
         }
       ],
       "last_match": {
-        "points": 125.0,
-        "captain": "H. Klaasen",
-        "vc": "A. Sharma",
+        "points": 290.0,
+        "captain": "Heinrich Klaasen",
+        "vc": "Abhishek Sharma",
         "transfers": 5,
         "playing_count": null,
         "boosters": []
@@ -184,12 +215,23 @@
       "temid": 1883650702,
       "usrscoid": "d143cd6a-50b1-701e-e682-35763fc829ff",
       "is_me": false,
-      "total_points": 7995.5,
+      "total_points": 8209.5,
       "transfers_used": 86,
       "transfers_left": 74,
-      "transfers_this_match": 4,
+      "transfers_this_match": 6,
       "transfer_efficiency": 93.0,
-      "boosters_used": 2,
+      "boosters_used": [
+        {
+          "id": 9,
+          "name": "Wildcard",
+          "gameday": 45
+        },
+        {
+          "id": 3,
+          "name": "Super Captain",
+          "gameday": 49
+        }
+      ],
       "boosters_remaining": 8,
       "matches": [
         {
@@ -197,9 +239,9 @@
           "match_num": 56,
           "transfers": 6,
           "teams": "GT vs SRH",
-          "points": 138.0,
-          "captain": "A. Sharma",
-          "vc": "I. Kishan",
+          "points": 352.0,
+          "captain": "Abhishek Sharma",
+          "vc": "Ishan Kishan",
           "wk": 2,
           "bat": 4,
           "ar": 2,
@@ -233,9 +275,9 @@
         }
       ],
       "last_match": {
-        "points": 138.0,
-        "captain": "A. Sharma",
-        "vc": "I. Kishan",
+        "points": 352.0,
+        "captain": "Abhishek Sharma",
+        "vc": "Ishan Kishan",
         "transfers": 6,
         "playing_count": null,
         "boosters": []
@@ -247,12 +289,33 @@
       "temid": 1883130802,
       "usrscoid": "91530d2a-a061-70fe-f477-027bddaf8f7e",
       "is_me": false,
-      "total_points": 7881.5,
+      "total_points": 8164.5,
       "transfers_used": 87,
       "transfers_left": 73,
       "transfers_this_match": 5,
       "transfer_efficiency": 90.6,
-      "boosters_used": 4,
+      "boosters_used": [
+        {
+          "id": 10,
+          "name": "Booster 10",
+          "gameday": 39
+        },
+        {
+          "id": 9,
+          "name": "Wildcard",
+          "gameday": 47
+        },
+        {
+          "id": 3,
+          "name": "Super Captain",
+          "gameday": 49
+        },
+        {
+          "id": 12,
+          "name": "Power Play",
+          "gameday": 50
+        }
+      ],
       "boosters_remaining": 6,
       "matches": [
         {
@@ -260,9 +323,9 @@
           "match_num": 56,
           "transfers": 5,
           "teams": "GT vs SRH",
-          "points": 165.0,
-          "captain": "J. Buttler",
-          "vc": "T. Head",
+          "points": 448.0,
+          "captain": "Jos Buttler",
+          "vc": "Travis Head",
           "wk": 1,
           "bat": 4,
           "ar": 2,
@@ -296,9 +359,9 @@
         }
       ],
       "last_match": {
-        "points": 165.0,
-        "captain": "J. Buttler",
-        "vc": "T. Head",
+        "points": 448.0,
+        "captain": "Jos Buttler",
+        "vc": "Travis Head",
         "transfers": 5,
         "playing_count": null,
         "boosters": []
@@ -310,12 +373,38 @@
       "temid": 1880300107,
       "usrscoid": "a1037d6a-60f1-70ee-b431-13f9c1503ea6",
       "is_me": false,
-      "total_points": 7575.0,
+      "total_points": 8013.0,
       "transfers_used": 94,
       "transfers_left": 66,
       "transfers_this_match": 6,
       "transfer_efficiency": 80.6,
-      "boosters_used": 5,
+      "boosters_used": [
+        {
+          "id": 3,
+          "name": "Super Captain",
+          "gameday": 39
+        },
+        {
+          "id": 9,
+          "name": "Wildcard",
+          "gameday": 47
+        },
+        {
+          "id": 9,
+          "name": "Wildcard",
+          "gameday": 56
+        },
+        {
+          "id": 12,
+          "name": "Power Play",
+          "gameday": 43
+        },
+        {
+          "id": 12,
+          "name": "Power Play",
+          "gameday": 46
+        }
+      ],
       "boosters_remaining": 5,
       "matches": [
         {
@@ -323,9 +412,9 @@
           "match_num": 56,
           "transfers": 6,
           "teams": "GT vs SRH",
-          "points": 96.0,
-          "captain": "T. Head",
-          "vc": "J. Buttler",
+          "points": 309.0,
+          "captain": "Travis Head",
+          "vc": "Jos Buttler",
           "wk": 3,
           "bat": 3,
           "ar": 2,
@@ -359,9 +448,9 @@
         }
       ],
       "last_match": {
-        "points": 96.0,
-        "captain": "T. Head",
-        "vc": "J. Buttler",
+        "points": 309.0,
+        "captain": "Travis Head",
+        "vc": "Jos Buttler",
         "transfers": 6,
         "playing_count": null,
         "boosters": []
@@ -373,12 +462,28 @@
       "temid": 1901660301,
       "usrscoid": "b1c33dea-e0c1-7000-8404-81a3f486e811",
       "is_me": false,
-      "total_points": 7221.5,
+      "total_points": 7674.5,
       "transfers_used": 88,
       "transfers_left": 72,
       "transfers_this_match": 6,
       "transfer_efficiency": 82.1,
-      "boosters_used": 3,
+      "boosters_used": [
+        {
+          "id": 12,
+          "name": "Power Play",
+          "gameday": 39
+        },
+        {
+          "id": 3,
+          "name": "Super Captain",
+          "gameday": 49
+        },
+        {
+          "id": 9,
+          "name": "Wildcard",
+          "gameday": 56
+        }
+      ],
       "boosters_remaining": 7,
       "matches": [
         {
@@ -386,9 +491,9 @@
           "match_num": 56,
           "transfers": 6,
           "teams": "GT vs SRH",
-          "points": 155.0,
-          "captain": "T. Head",
-          "vc": "J. Buttler",
+          "points": 383.0,
+          "captain": "Travis Head",
+          "vc": "Jos Buttler",
           "wk": 2,
           "bat": 3,
           "ar": 3,
@@ -422,9 +527,9 @@
         }
       ],
       "last_match": {
-        "points": 155.0,
-        "captain": "T. Head",
-        "vc": "J. Buttler",
+        "points": 383.0,
+        "captain": "Travis Head",
+        "vc": "Jos Buttler",
         "transfers": 6,
         "playing_count": null,
         "boosters": []
@@ -436,12 +541,38 @@
       "temid": 1878020203,
       "usrscoid": "31339d2a-a0f1-7000-6174-eabf69600c33",
       "is_me": false,
-      "total_points": 6919.0,
+      "total_points": 7349.0,
       "transfers_used": 86,
       "transfers_left": 74,
-      "transfers_this_match": 11,
+      "transfers_this_match": 7,
       "transfer_efficiency": 80.5,
-      "boosters_used": 5,
+      "boosters_used": [
+        {
+          "id": 3,
+          "name": "Super Captain",
+          "gameday": 55
+        },
+        {
+          "id": 9,
+          "name": "Wildcard",
+          "gameday": 56
+        },
+        {
+          "id": 10,
+          "name": "Booster 10",
+          "gameday": 40
+        },
+        {
+          "id": 12,
+          "name": "Power Play",
+          "gameday": 42
+        },
+        {
+          "id": 12,
+          "name": "Power Play",
+          "gameday": 43
+        }
+      ],
       "boosters_remaining": 5,
       "matches": [
         {
@@ -449,9 +580,9 @@
           "match_num": 56,
           "transfers": 7,
           "teams": "GT vs SRH",
-          "points": 92.0,
-          "captain": "T. Head",
-          "vc": "J. Buttler",
+          "points": 297.0,
+          "captain": "Travis Head",
+          "vc": "Jos Buttler",
           "wk": 3,
           "bat": 4,
           "ar": 1,
@@ -485,9 +616,9 @@
         }
       ],
       "last_match": {
-        "points": 92.0,
-        "captain": "T. Head",
-        "vc": "J. Buttler",
+        "points": 297.0,
+        "captain": "Travis Head",
+        "vc": "Jos Buttler",
         "transfers": 7,
         "playing_count": null,
         "boosters": []
