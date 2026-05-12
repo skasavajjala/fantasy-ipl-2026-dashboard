@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-12T08:10:44.276393",
+  "last_updated": "2026-05-12T08:32:36.527277",
   "last_match": {
     "name": "Match 55",
     "teams": "PBKS vs DC",
@@ -32,9 +32,9 @@
   },
   "next_match": {
     "name": "Match 57",
-    "teams": "\u2014",
-    "date": "",
-    "venue": ""
+    "teams": "RCB vs KKR",
+    "date": "2026-05-13",
+    "venue": "Raipur"
   },
   "last_gameday": 55,
   "next_gameday": 57,
@@ -45,7 +45,7 @@
       "temid": 1843790901,
       "usrscoid": "71f3ad4a-a0d1-70c1-cf04-a4e43818bc3a",
       "is_me": true,
-      "total_points": 8535.0,
+      "total_points": 8579.0,
       "transfers_used": 111,
       "transfers_left": 49,
       "transfers_this_match": 4,
@@ -84,7 +84,7 @@
           "match_num": 56,
           "transfers": 5,
           "teams": "GT vs SRH",
-          "points": 84.0,
+          "points": 99.0,
           "captain": "H. Klaasen",
           "vc": "S. Gill",
           "wk": 2,
