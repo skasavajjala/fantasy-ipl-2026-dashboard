@@ -313,6 +313,15 @@ function effClass(v) {
 
 function boosterChips(boosters_used, remaining) {
   if (boosters_used === null) return '<span class="pts-na">—</span>';
+  // For others: [{count: N}] — just show count + remaining
+  if (boosters_used.length > 0 && boosters_used[0].count !== undefined) {
+    const usedCount = boosters_used[0].count;
+    const remHtml = remaining > 0 ? ` <span class="booster-count">+${remaining} left</span>` : '';
+    const chips = Array.from({length: usedCount}, () =>
+      `<span class="booster-chip used">used</span>`).join('');
+    return `<div class="booster-list">${chips}${remHtml}</div>`;
+  }
+  // For me: full booster details
   const chips = (boosters_used || []).map(b =>
     `<span class="booster-chip used" title="GD${b.gameday}">${b.name}</span>`
   );

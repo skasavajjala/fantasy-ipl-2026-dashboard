@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-11T23:08:58.100785",
+  "last_updated": "2026-05-11T23:38:26.229595",
   "last_match": {
     "name": "Match 55",
     "teams": "PBKS vs DC",
@@ -32,7 +32,7 @@
   },
   "next_match": {
     "name": "Match 56",
-    "teams": "GT vs SRH",
+    "teams": "\u2014",
     "date": "",
     "venue": ""
   },
@@ -81,9 +81,7 @@
       "last_match": {
         "points": 175.5,
         "captain": "KL Rahul",
-        "captain_id": 60122,
         "vc": "Prabhsimran Singh",
-        "vc_id": 70222,
         "playing_count": 4,
         "transfers": 4,
         "boosters": []
@@ -96,19 +94,23 @@
       "usrscoid": "3880773782",
       "is_me": false,
       "total_points": 8162.5,
-      "transfers_used": null,
-      "transfers_left": null,
-      "transfers_this_match": null,
-      "transfer_efficiency": null,
-      "boosters_used": null,
-      "boosters_remaining": null,
+      "transfers_used": 83,
+      "transfers_left": 77,
+      "transfers_this_match": 6,
+      "transfer_efficiency": 98.3,
+      "boosters_used": [
+        {
+          "count": 6
+        }
+      ],
+      "boosters_remaining": 4,
       "last_match": {
-        "points": null,
-        "captain": null,
-        "vc": null,
-        "playing_count": null,
-        "transfers": null,
-        "boosters": null
+        "points": 414.5,
+        "captain": "C. Connolly",
+        "vc": "K. Rahul",
+        "playing_count": 11,
+        "transfers": 6,
+        "boosters": []
       }
     },
     {
@@ -118,19 +120,23 @@
       "usrscoid": "d143cd6a-50b1-701e-e682-35763fc829ff",
       "is_me": false,
       "total_points": 7857.5,
-      "transfers_used": null,
-      "transfers_left": null,
-      "transfers_this_match": null,
-      "transfer_efficiency": null,
-      "boosters_used": null,
-      "boosters_remaining": null,
+      "transfers_used": 80,
+      "transfers_left": 80,
+      "transfers_this_match": 4,
+      "transfer_efficiency": 98.2,
+      "boosters_used": [
+        {
+          "count": 2
+        }
+      ],
+      "boosters_remaining": 8,
       "last_match": {
-        "points": null,
-        "captain": null,
-        "vc": null,
-        "playing_count": null,
-        "transfers": null,
-        "boosters": null
+        "points": 391.0,
+        "captain": "P. Arya",
+        "vc": "S. Iyer",
+        "playing_count": 11,
+        "transfers": 4,
+        "boosters": []
       }
     },
     {
@@ -140,19 +146,23 @@
       "usrscoid": "91530d2a-a061-70fe-f477-027bddaf8f7e",
       "is_me": false,
       "total_points": 7716.5,
-      "transfers_used": null,
-      "transfers_left": null,
-      "transfers_this_match": null,
-      "transfer_efficiency": null,
-      "boosters_used": null,
-      "boosters_remaining": null,
+      "transfers_used": 82,
+      "transfers_left": 78,
+      "transfers_this_match": 5,
+      "transfer_efficiency": 94.1,
+      "boosters_used": [
+        {
+          "count": 4
+        }
+      ],
+      "boosters_remaining": 6,
       "last_match": {
-        "points": null,
-        "captain": null,
-        "vc": null,
-        "playing_count": null,
-        "transfers": null,
-        "boosters": null
+        "points": 330.0,
+        "captain": "C. Connolly",
+        "vc": "A. Patel",
+        "playing_count": 11,
+        "transfers": 5,
+        "boosters": []
       }
     },
     {
@@ -162,19 +172,23 @@
       "usrscoid": "a1037d6a-60f1-70ee-b431-13f9c1503ea6",
       "is_me": false,
       "total_points": 7479.0,
-      "transfers_used": null,
-      "transfers_left": null,
-      "transfers_this_match": null,
-      "transfer_efficiency": null,
-      "boosters_used": null,
-      "boosters_remaining": null,
+      "transfers_used": 88,
+      "transfers_left": 72,
+      "transfers_this_match": 6,
+      "transfer_efficiency": 85.0,
+      "boosters_used": [
+        {
+          "count": 4
+        }
+      ],
+      "boosters_remaining": 6,
       "last_match": {
-        "points": null,
-        "captain": null,
-        "vc": null,
-        "playing_count": null,
-        "transfers": null,
-        "boosters": null
+        "points": 293.5,
+        "captain": "P. Arya",
+        "vc": "K. Rahul",
+        "playing_count": 11,
+        "transfers": 6,
+        "boosters": []
       }
     },
     {
@@ -184,19 +198,23 @@
       "usrscoid": "b1c33dea-e0c1-7000-8404-81a3f486e811",
       "is_me": false,
       "total_points": 7066.5,
-      "transfers_used": null,
-      "transfers_left": null,
-      "transfers_this_match": null,
-      "transfer_efficiency": null,
-      "boosters_used": null,
-      "boosters_remaining": null,
+      "transfers_used": 82,
+      "transfers_left": 78,
+      "transfers_this_match": 6,
+      "transfer_efficiency": 86.2,
+      "boosters_used": [
+        {
+          "count": 2
+        }
+      ],
+      "boosters_remaining": 8,
       "last_match": {
-        "points": null,
-        "captain": null,
-        "vc": null,
-        "playing_count": null,
-        "transfers": null,
-        "boosters": null
+        "points": 327.0,
+        "captain": "K. Rahul",
+        "vc": "P. Arya",
+        "playing_count": 11,
+        "transfers": 6,
+        "boosters": []
       }
     },
     {
@@ -206,19 +224,23 @@
       "usrscoid": "31339d2a-a0f1-7000-6174-eabf69600c33",
       "is_me": false,
       "total_points": 6827.0,
-      "transfers_used": null,
-      "transfers_left": null,
-      "transfers_this_match": null,
-      "transfer_efficiency": null,
-      "boosters_used": null,
-      "boosters_remaining": null,
+      "transfers_used": 79,
+      "transfers_left": 81,
+      "transfers_this_match": 11,
+      "transfer_efficiency": 86.4,
+      "boosters_used": [
+        {
+          "count": 5
+        }
+      ],
+      "boosters_remaining": 5,
       "last_match": {
-        "points": null,
-        "captain": null,
-        "vc": null,
-        "playing_count": null,
-        "transfers": null,
-        "boosters": null
+        "points": 959.0,
+        "captain": "P. Singh",
+        "vc": "K. Rahul",
+        "playing_count": 11,
+        "transfers": 11,
+        "boosters": []
       }
     }
   ],
@@ -226,37 +248,37 @@
     "1843790901": {
       "total_points": 8451.0,
       "rank": 1,
-      "scraped_at": "2026-05-11T23:08:58.100766"
+      "scraped_at": "2026-05-11T23:38:26.229579"
     },
     "1852810401": {
       "total_points": 8162.5,
       "rank": 2,
-      "scraped_at": "2026-05-11T23:08:58.100779"
+      "scraped_at": "2026-05-11T23:38:26.229588"
     },
     "1883650702": {
       "total_points": 7857.5,
       "rank": 3,
-      "scraped_at": "2026-05-11T23:08:58.100780"
+      "scraped_at": "2026-05-11T23:38:26.229590"
     },
     "1883130802": {
       "total_points": 7716.5,
       "rank": 4,
-      "scraped_at": "2026-05-11T23:08:58.100781"
+      "scraped_at": "2026-05-11T23:38:26.229591"
     },
     "1880300107": {
       "total_points": 7479.0,
       "rank": 5,
-      "scraped_at": "2026-05-11T23:08:58.100782"
+      "scraped_at": "2026-05-11T23:38:26.229592"
     },
     "1901660301": {
       "total_points": 7066.5,
       "rank": 6,
-      "scraped_at": "2026-05-11T23:08:58.100783"
+      "scraped_at": "2026-05-11T23:38:26.229593"
     },
     "1878020203": {
       "total_points": 6827.0,
       "rank": 7,
-      "scraped_at": "2026-05-11T23:08:58.100784"
+      "scraped_at": "2026-05-11T23:38:26.229594"
     }
   }
 }
