@@ -33,7 +33,7 @@
       "temid": 1843790901,
       "usrscoid": "71f3ad4a-a0d1-70c1-cf04-a4e43818bc3a",
       "is_me": true,
-      "total_points": 8579.0,
+      "total_points": 8807.0,
       "transfers_used": 111,
       "transfers_left": 49,
       "transfers_this_match": 4,
@@ -72,7 +72,7 @@
           "match_num": 56,
           "transfers": 5,
           "teams": "GT vs SRH",
-          "points": 99.0,
+          "points": 356.0,
           "captain": "H. Klaasen",
           "vc": "S. Gill",
           "wk": 2,
@@ -108,7 +108,7 @@
         }
       ],
       "last_match": {
-        "points": 99.0,
+        "points": 356.0,
         "captain": "H. Klaasen",
         "vc": "S. Gill",
         "transfers": 5,
