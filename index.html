@@ -262,6 +262,7 @@
             <th>Team</th>
             <th>Captain</th>
             <th>Vice-Captain</th>
+            <th class="c">Booster</th>
             <th class="r">SQ Players</th>
             <th class="r">Match Pts</th>
             <th class="r">Xfer</th>
@@ -392,9 +393,10 @@ async function load() {
       </tr>`;
   }
 
-  // ── Match table ──
+  // ── Match table (always sorted by season rank) ──
   const matchBody = document.getElementById('match-body');
-  for (const m of data.members || []) {
+  const matchMembers = [...(data.members || [])].sort((a, b) => (a.rank || 99) - (b.rank || 99));
+  for (const m of matchMembers) {
     const trCls = m.is_me ? 'is-me' : '';
     const lmatch = m.last_match || {};
 
@@ -408,12 +410,18 @@ async function load() {
     const mpts  = lmatch.points;
     const ptsCls = mpts != null ? (mpts >= 300 ? 'val-good' : mpts >= 150 ? 'val-mid' : '') : '';
 
+    const boosterUsed = lmatch.booster_used || '';
+    const boosterHtml = boosterUsed
+      ? `<span class="bst-pill">${boosterUsed}</span>`
+      : '<span class="val-na">—</span>';
+
     matchBody.innerHTML += `
       <tr class="${trCls}">
         <td>${rankBadge(m.rank)}</td>
         <td>${teamName(m)}</td>
         <td>${capHtml}</td>
         <td>${vcHtml}</td>
+        <td class="c">${boosterHtml}</td>
         <td class="r">${na(lmatch.playing_count)}</td>
         <td class="r">${pts(mpts, ptsCls || 'val-big')}</td>
         <td class="r">${na(lmatch.transfers)}</td>

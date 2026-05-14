@@ -1,18 +1,18 @@
 {
-  "last_updated": "2026-05-12T10:36:46.932893",
+  "last_updated": "2026-05-13T22:14:03.807561",
   "last_match": {
-    "name": "Match 56",
-    "teams": "GT vs SRH",
-    "result": "Live",
-    "date": "2026-05-12",
-    "venue": "Narendra Modi Stadium, Ahmedabad",
+    "name": "Match 57",
+    "teams": "RCB vs KKR",
+    "result": "Completed",
+    "date": "2026-05-13",
+    "venue": "M. Chinnaswamy Stadium, Bangalore",
     "participants": [
       {
-        "short_name": "GT",
+        "short_name": "RCB",
         "value": ""
       },
       {
-        "short_name": "SRH",
+        "short_name": "KKR",
         "value": ""
       }
     ]
@@ -23,7 +23,7 @@
     "date": "",
     "venue": ""
   },
-  "last_gameday": 56,
+  "last_gameday": 57,
   "next_gameday": 57,
   "members": [
     {
@@ -32,7 +32,7 @@
       "temid": 1843790901,
       "usrscoid": "71f3ad4a-a0d1-70c1-cf04-a4e43818bc3a",
       "is_me": true,
-      "total_points": 8815.0,
+      "total_points": 8970.5,
       "transfers_used": 111,
       "transfers_left": 49,
       "transfers_this_match": 5,
@@ -67,17 +67,28 @@
       "boosters_remaining": 5,
       "matches": [
         {
+          "match_name": "Match 57",
+          "match_num": 57,
+          "points": 155.5,
+          "captain": "B. Kumar",
+          "vc": "S. Narine",
+          "transfers": null,
+          "booster_used": "",
+          "teams": "RCB vs KKR"
+        },
+        {
           "match_name": "Match 56",
           "match_num": 56,
           "transfers": 5,
           "teams": "GT vs SRH",
           "points": 364.0,
-          "captain": "Heinrich Klaasen",
-          "vc": "Shubman Gill",
+          "captain": "H. Klaasen",
+          "vc": "S. Gill",
           "wk": 2,
           "bat": 4,
           "ar": 2,
-          "bowl": 3
+          "bowl": 3,
+          "booster_used": ""
         },
         {
           "match_name": "Match 55",
@@ -107,21 +118,118 @@
         }
       ],
       "last_match": {
-        "points": 364.0,
-        "captain": "Heinrich Klaasen",
-        "vc": "Shubman Gill",
-        "transfers": 5,
+        "points": 155.5,
+        "captain": "B. Kumar",
+        "vc": "S. Narine",
+        "transfers": null,
         "playing_count": null,
-        "boosters": []
+        "boosters": [],
+        "booster_used": ""
       }
     },
     {
       "rank": 2,
+      "team_name": "Leftover Challengers",
+      "temid": 1883130802,
+      "usrscoid": "91530d2a-a061-70fe-f477-027bddaf8f7e",
+      "is_me": false,
+      "total_points": 8812.0,
+      "transfers_used": 87,
+      "transfers_left": 73,
+      "transfers_this_match": 5,
+      "transfer_efficiency": 90.6,
+      "boosters_used": [
+        {
+          "id": 10,
+          "name": "Booster 10",
+          "gameday": 39
+        },
+        {
+          "id": 9,
+          "name": "Wildcard",
+          "gameday": 47
+        },
+        {
+          "id": 3,
+          "name": "Super Captain",
+          "gameday": 49
+        },
+        {
+          "id": 12,
+          "name": "Power Play",
+          "gameday": 50
+        }
+      ],
+      "boosters_remaining": 6,
+      "matches": [
+        {
+          "match_name": "Match 57",
+          "match_num": 57,
+          "points": 647.5,
+          "captain": "J. Hazlewood",
+          "vc": "B. Kumar",
+          "transfers": null,
+          "booster_used": "",
+          "teams": "RCB vs KKR"
+        },
+        {
+          "match_name": "Match 56",
+          "match_num": 56,
+          "transfers": 5,
+          "teams": "GT vs SRH",
+          "points": 448.0,
+          "captain": "J. Buttler",
+          "vc": "T. Head",
+          "wk": 1,
+          "bat": 4,
+          "ar": 2,
+          "bowl": 4,
+          "booster_used": ""
+        },
+        {
+          "match_name": "Match 55",
+          "match_num": 55,
+          "transfers": 5,
+          "teams": "PBKS vs DC",
+          "points": 330.0,
+          "captain": "C. Connolly",
+          "vc": "A. Patel",
+          "wk": 2,
+          "bat": 3,
+          "ar": 3,
+          "bowl": 3
+        },
+        {
+          "match_name": "Match 54",
+          "match_num": 54,
+          "transfers": 5,
+          "teams": "RCB vs MI",
+          "points": 455.0,
+          "captain": "J. Bethell",
+          "vc": "R. Rickelton",
+          "wk": 1,
+          "bat": 5,
+          "ar": 2,
+          "bowl": 3
+        }
+      ],
+      "last_match": {
+        "points": 647.5,
+        "captain": "J. Hazlewood",
+        "vc": "B. Kumar",
+        "transfers": null,
+        "playing_count": null,
+        "boosters": [],
+        "booster_used": ""
+      }
+    },
+    {
+      "rank": 3,
       "team_name": "Just for friendship",
       "temid": 1852810401,
       "usrscoid": "3880773782",
       "is_me": false,
-      "total_points": 8452.5,
+      "total_points": 8637.0,
       "transfers_used": 88,
       "transfers_left": 72,
       "transfers_this_match": 5,
@@ -161,17 +269,28 @@
       "boosters_remaining": 4,
       "matches": [
         {
+          "match_name": "Match 57",
+          "match_num": 57,
+          "points": 184.5,
+          "captain": "C. Green",
+          "vc": "B. Kumar",
+          "transfers": null,
+          "booster_used": "",
+          "teams": "RCB vs KKR"
+        },
+        {
           "match_name": "Match 56",
           "match_num": 56,
           "transfers": 5,
           "teams": "GT vs SRH",
           "points": 290.0,
-          "captain": "Heinrich Klaasen",
-          "vc": "Abhishek Sharma",
+          "captain": "H. Klaasen",
+          "vc": "A. Sharma",
           "wk": 1,
           "bat": 3,
           "ar": 4,
-          "bowl": 3
+          "bowl": 3,
+          "booster_used": ""
         },
         {
           "match_name": "Match 55",
@@ -201,179 +320,22 @@
         }
       ],
       "last_match": {
-        "points": 290.0,
-        "captain": "Heinrich Klaasen",
-        "vc": "Abhishek Sharma",
-        "transfers": 5,
+        "points": 184.5,
+        "captain": "C. Green",
+        "vc": "B. Kumar",
+        "transfers": null,
         "playing_count": null,
-        "boosters": []
-      }
-    },
-    {
-      "rank": 3,
-      "team_name": "Debba meeda debba",
-      "temid": 1883650702,
-      "usrscoid": "d143cd6a-50b1-701e-e682-35763fc829ff",
-      "is_me": false,
-      "total_points": 8209.5,
-      "transfers_used": 86,
-      "transfers_left": 74,
-      "transfers_this_match": 6,
-      "transfer_efficiency": 93.0,
-      "boosters_used": [
-        {
-          "id": 9,
-          "name": "Wildcard",
-          "gameday": 45
-        },
-        {
-          "id": 3,
-          "name": "Super Captain",
-          "gameday": 49
-        }
-      ],
-      "boosters_remaining": 8,
-      "matches": [
-        {
-          "match_name": "Match 56",
-          "match_num": 56,
-          "transfers": 6,
-          "teams": "GT vs SRH",
-          "points": 352.0,
-          "captain": "Abhishek Sharma",
-          "vc": "Ishan Kishan",
-          "wk": 2,
-          "bat": 4,
-          "ar": 2,
-          "bowl": 3
-        },
-        {
-          "match_name": "Match 55",
-          "match_num": 55,
-          "transfers": 4,
-          "teams": "PBKS vs DC",
-          "points": 391.0,
-          "captain": "P. Arya",
-          "vc": "S. Iyer",
-          "wk": 1,
-          "bat": 5,
-          "ar": 2,
-          "bowl": 3
-        },
-        {
-          "match_name": "Match 54",
-          "match_num": 54,
-          "transfers": 6,
-          "teams": "RCB vs MI",
-          "points": 341.0,
-          "captain": "J. Bethell",
-          "vc": "R. Sharma",
-          "wk": 1,
-          "bat": 5,
-          "ar": 1,
-          "bowl": 4
-        }
-      ],
-      "last_match": {
-        "points": 352.0,
-        "captain": "Abhishek Sharma",
-        "vc": "Ishan Kishan",
-        "transfers": 6,
-        "playing_count": null,
-        "boosters": []
+        "boosters": [],
+        "booster_used": ""
       }
     },
     {
       "rank": 4,
-      "team_name": "Leftover Challengers",
-      "temid": 1883130802,
-      "usrscoid": "91530d2a-a061-70fe-f477-027bddaf8f7e",
-      "is_me": false,
-      "total_points": 8164.5,
-      "transfers_used": 87,
-      "transfers_left": 73,
-      "transfers_this_match": 5,
-      "transfer_efficiency": 90.6,
-      "boosters_used": [
-        {
-          "id": 10,
-          "name": "Booster 10",
-          "gameday": 39
-        },
-        {
-          "id": 9,
-          "name": "Wildcard",
-          "gameday": 47
-        },
-        {
-          "id": 3,
-          "name": "Super Captain",
-          "gameday": 49
-        },
-        {
-          "id": 12,
-          "name": "Power Play",
-          "gameday": 50
-        }
-      ],
-      "boosters_remaining": 6,
-      "matches": [
-        {
-          "match_name": "Match 56",
-          "match_num": 56,
-          "transfers": 5,
-          "teams": "GT vs SRH",
-          "points": 448.0,
-          "captain": "Jos Buttler",
-          "vc": "Travis Head",
-          "wk": 1,
-          "bat": 4,
-          "ar": 2,
-          "bowl": 4
-        },
-        {
-          "match_name": "Match 55",
-          "match_num": 55,
-          "transfers": 5,
-          "teams": "PBKS vs DC",
-          "points": 330.0,
-          "captain": "C. Connolly",
-          "vc": "A. Patel",
-          "wk": 2,
-          "bat": 3,
-          "ar": 3,
-          "bowl": 3
-        },
-        {
-          "match_name": "Match 54",
-          "match_num": 54,
-          "transfers": 5,
-          "teams": "RCB vs MI",
-          "points": 455.0,
-          "captain": "J. Bethell",
-          "vc": "R. Rickelton",
-          "wk": 1,
-          "bat": 5,
-          "ar": 2,
-          "bowl": 3
-        }
-      ],
-      "last_match": {
-        "points": 448.0,
-        "captain": "Jos Buttler",
-        "vc": "Travis Head",
-        "transfers": 5,
-        "playing_count": null,
-        "boosters": []
-      }
-    },
-    {
-      "rank": 5,
       "team_name": "Lost XI",
       "temid": 1880300107,
       "usrscoid": "a1037d6a-60f1-70ee-b431-13f9c1503ea6",
       "is_me": false,
-      "total_points": 8013.0,
+      "total_points": 8433.5,
       "transfers_used": 94,
       "transfers_left": 66,
       "transfers_this_match": 6,
@@ -408,17 +370,28 @@
       "boosters_remaining": 5,
       "matches": [
         {
+          "match_name": "Match 57",
+          "match_num": 57,
+          "points": 420.5,
+          "captain": "B. Kumar",
+          "vc": "J. Hazlewood",
+          "transfers": null,
+          "booster_used": "",
+          "teams": "RCB vs KKR"
+        },
+        {
           "match_name": "Match 56",
           "match_num": 56,
           "transfers": 6,
           "teams": "GT vs SRH",
-          "points": 309.0,
-          "captain": "Travis Head",
-          "vc": "Jos Buttler",
+          "points": 534.0,
+          "captain": "T. Head",
+          "vc": "J. Buttler",
           "wk": 3,
           "bat": 3,
           "ar": 2,
-          "bowl": 3
+          "bowl": 3,
+          "booster_used": "Foreign Stars"
         },
         {
           "match_name": "Match 55",
@@ -448,12 +421,99 @@
         }
       ],
       "last_match": {
-        "points": 309.0,
-        "captain": "Travis Head",
-        "vc": "Jos Buttler",
-        "transfers": 6,
+        "points": 420.5,
+        "captain": "B. Kumar",
+        "vc": "J. Hazlewood",
+        "transfers": null,
         "playing_count": null,
-        "boosters": []
+        "boosters": [],
+        "booster_used": ""
+      }
+    },
+    {
+      "rank": 5,
+      "team_name": "Debba meeda debba",
+      "temid": 1883650702,
+      "usrscoid": "d143cd6a-50b1-701e-e682-35763fc829ff",
+      "is_me": false,
+      "total_points": 8290.5,
+      "transfers_used": 86,
+      "transfers_left": 74,
+      "transfers_this_match": 6,
+      "transfer_efficiency": 93.0,
+      "boosters_used": [
+        {
+          "id": 9,
+          "name": "Wildcard",
+          "gameday": 45
+        },
+        {
+          "id": 3,
+          "name": "Super Captain",
+          "gameday": 49
+        }
+      ],
+      "boosters_remaining": 8,
+      "matches": [
+        {
+          "match_name": "Match 57",
+          "match_num": 57,
+          "points": 81.0,
+          "captain": "J. Bethell",
+          "vc": "T. Head",
+          "transfers": null,
+          "booster_used": "",
+          "teams": "RCB vs KKR"
+        },
+        {
+          "match_name": "Match 56",
+          "match_num": 56,
+          "transfers": 6,
+          "teams": "GT vs SRH",
+          "points": 352.0,
+          "captain": "A. Sharma",
+          "vc": "I. Kishan",
+          "wk": 2,
+          "bat": 4,
+          "ar": 2,
+          "bowl": 3,
+          "booster_used": ""
+        },
+        {
+          "match_name": "Match 55",
+          "match_num": 55,
+          "transfers": 4,
+          "teams": "PBKS vs DC",
+          "points": 391.0,
+          "captain": "P. Arya",
+          "vc": "S. Iyer",
+          "wk": 1,
+          "bat": 5,
+          "ar": 2,
+          "bowl": 3
+        },
+        {
+          "match_name": "Match 54",
+          "match_num": 54,
+          "transfers": 6,
+          "teams": "RCB vs MI",
+          "points": 341.0,
+          "captain": "J. Bethell",
+          "vc": "R. Sharma",
+          "wk": 1,
+          "bat": 5,
+          "ar": 1,
+          "bowl": 4
+        }
+      ],
+      "last_match": {
+        "points": 81.0,
+        "captain": "J. Bethell",
+        "vc": "T. Head",
+        "transfers": null,
+        "playing_count": null,
+        "boosters": [],
+        "booster_used": ""
       }
     },
     {
@@ -462,7 +522,7 @@
       "temid": 1901660301,
       "usrscoid": "b1c33dea-e0c1-7000-8404-81a3f486e811",
       "is_me": false,
-      "total_points": 7674.5,
+      "total_points": 8048.0,
       "transfers_used": 88,
       "transfers_left": 72,
       "transfers_this_match": 6,
@@ -487,17 +547,28 @@
       "boosters_remaining": 7,
       "matches": [
         {
+          "match_name": "Match 57",
+          "match_num": 57,
+          "points": 373.5,
+          "captain": "B. Kumar",
+          "vc": "C. Green",
+          "transfers": null,
+          "booster_used": "",
+          "teams": "RCB vs KKR"
+        },
+        {
           "match_name": "Match 56",
           "match_num": 56,
           "transfers": 6,
           "teams": "GT vs SRH",
-          "points": 383.0,
-          "captain": "Travis Head",
-          "vc": "Jos Buttler",
+          "points": 608.0,
+          "captain": "T. Head",
+          "vc": "J. Buttler",
           "wk": 2,
           "bat": 3,
           "ar": 3,
-          "bowl": 3
+          "bowl": 3,
+          "booster_used": "Foreign Stars"
         },
         {
           "match_name": "Match 55",
@@ -527,12 +598,13 @@
         }
       ],
       "last_match": {
-        "points": 383.0,
-        "captain": "Travis Head",
-        "vc": "Jos Buttler",
-        "transfers": 6,
+        "points": 373.5,
+        "captain": "B. Kumar",
+        "vc": "C. Green",
+        "transfers": null,
         "playing_count": null,
-        "boosters": []
+        "boosters": [],
+        "booster_used": ""
       }
     },
     {
@@ -541,7 +613,7 @@
       "temid": 1878020203,
       "usrscoid": "31339d2a-a0f1-7000-6174-eabf69600c33",
       "is_me": false,
-      "total_points": 7349.0,
+      "total_points": 7539.5,
       "transfers_used": 86,
       "transfers_left": 74,
       "transfers_this_match": 7,
@@ -576,17 +648,28 @@
       "boosters_remaining": 5,
       "matches": [
         {
+          "match_name": "Match 57",
+          "match_num": 57,
+          "points": 190.5,
+          "captain": "J. Hazlewood",
+          "vc": "B. Kumar",
+          "transfers": null,
+          "booster_used": "",
+          "teams": "RCB vs KKR"
+        },
+        {
           "match_name": "Match 56",
           "match_num": 56,
           "transfers": 7,
           "teams": "GT vs SRH",
-          "points": 297.0,
-          "captain": "Travis Head",
-          "vc": "Jos Buttler",
+          "points": 522.0,
+          "captain": "T. Head",
+          "vc": "J. Buttler",
           "wk": 3,
           "bat": 4,
           "ar": 1,
-          "bowl": 3
+          "bowl": 3,
+          "booster_used": "Foreign Stars"
         },
         {
           "match_name": "Match 55",
@@ -616,12 +699,13 @@
         }
       ],
       "last_match": {
-        "points": 297.0,
-        "captain": "Travis Head",
-        "vc": "Jos Buttler",
-        "transfers": 7,
+        "points": 190.5,
+        "captain": "J. Hazlewood",
+        "vc": "B. Kumar",
+        "transfers": null,
         "playing_count": null,
-        "boosters": []
+        "boosters": [],
+        "booster_used": ""
       }
     }
   ]
