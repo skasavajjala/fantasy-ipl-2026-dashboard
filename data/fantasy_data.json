@@ -1,30 +1,43 @@
 {
-  "last_updated": "2026-05-13T22:36:37.958578",
+  "last_updated": "2026-05-14T08:10:43.695461",
   "last_match": {
     "name": "Match 57",
     "teams": "RCB vs KKR",
-    "result": "Completed",
+    "result": "RCB beat KKR by 6 wickets",
     "date": "2026-05-13",
-    "venue": "M. Chinnaswamy Stadium, Bangalore",
+    "venue": "Shaheed Veer Narayan Singh International Stadium, Raipur",
     "participants": [
       {
+        "name": "Royal Challengers Bengaluru",
+        "name_eng": "Royal Challengers Bengaluru",
         "short_name": "RCB",
-        "value": ""
+        "short_name_eng": "RCB",
+        "id": "1105",
+        "value": "194/4 (19.1)",
+        "highlight": "true",
+        "now": "true",
+        "players_involved": []
       },
       {
+        "name": "Kolkata Knight Riders",
+        "name_eng": "Kolkata Knight Riders",
         "short_name": "KKR",
-        "value": ""
+        "short_name_eng": "KKR",
+        "id": "1106",
+        "value": "192/4 (20.0)",
+        "firstup": "true",
+        "players_involved": []
       }
     ]
   },
   "next_match": {
-    "name": "Match 58",
+    "name": "Match 59",
     "teams": "\u2014",
     "date": "",
     "venue": ""
   },
   "last_gameday": 57,
-  "next_gameday": 58,
+  "next_gameday": 59,
   "members": [
     {
       "rank": 1,
@@ -32,11 +45,11 @@
       "temid": 1843790901,
       "usrscoid": "71f3ad4a-a0d1-70c1-cf04-a4e43818bc3a",
       "is_me": true,
-      "total_points": 8970.5,
-      "transfers_used": 115,
-      "transfers_left": 45,
+      "total_points": 9162.5,
+      "transfers_used": 119,
+      "transfers_left": 41,
       "transfers_this_match": 4,
-      "transfer_efficiency": 76.9,
+      "transfer_efficiency": 77.0,
       "boosters_used": [
         {
           "id": 3,
@@ -50,7 +63,7 @@
         },
         {
           "id": 9,
-          "name": "Foreign Stars",
+          "name": "Wildcard",
           "gameday": 41
         },
         {
@@ -67,14 +80,30 @@
       "boosters_remaining": 5,
       "matches": [
         {
+          "match_name": "Match 58",
+          "match_num": 58,
+          "transfers": 4,
+          "teams": "PBKS vs MI",
+          "points": 192.0,
+          "captain": "C. Connolly",
+          "vc": "P. Arya",
+          "wk": 2,
+          "bat": 4,
+          "ar": 2,
+          "bowl": 3
+        },
+        {
           "match_name": "Match 57",
           "match_num": 57,
-          "points": 155.5,
-          "captain": "Bhuvneshwar Kumar",
-          "vc": "Sunil Narine",
           "transfers": 4,
-          "booster_used": "",
-          "teams": "RCB vs KKR"
+          "teams": "RCB vs KKR",
+          "points": 155.5,
+          "captain": "B. Kumar",
+          "vc": "S. Narine",
+          "wk": 1,
+          "bat": 4,
+          "ar": 3,
+          "bowl": 3
         },
         {
           "match_name": "Match 56",
@@ -87,33 +116,6 @@
           "wk": 2,
           "bat": 4,
           "ar": 2,
-          "bowl": 3,
-          "booster_used": ""
-        },
-        {
-          "match_name": "Match 55",
-          "match_num": 55,
-          "transfers": 4,
-          "teams": "PBKS vs DC",
-          "points": 175.5,
-          "captain": "K. Rahul",
-          "vc": "P. Singh",
-          "wk": 4,
-          "bat": 3,
-          "ar": 1,
-          "bowl": 3
-        },
-        {
-          "match_name": "Match 54",
-          "match_num": 54,
-          "transfers": 4,
-          "teams": "RCB vs MI",
-          "points": 272.0,
-          "captain": "V. Kohli",
-          "vc": "R. Rickelton",
-          "wk": 4,
-          "bat": 3,
-          "ar": 1,
           "bowl": 3
         }
       ],
@@ -121,10 +123,9 @@
         "points": 155.5,
         "captain": "Bhuvneshwar Kumar",
         "vc": "Sunil Narine",
+        "playing_count": 6,
         "transfers": 4,
-        "playing_count": null,
-        "boosters": [],
-        "booster_used": ""
+        "boosters": []
       }
     },
     {
@@ -133,44 +134,39 @@
       "temid": 1883130802,
       "usrscoid": "91530d2a-a061-70fe-f477-027bddaf8f7e",
       "is_me": false,
-      "total_points": 8812.0,
-      "transfers_used": 95,
-      "transfers_left": 65,
+      "total_points": 9042.0,
+      "transfers_used": 100,
+      "transfers_left": 60,
       "transfers_this_match": 8,
-      "transfer_efficiency": 90.6,
-      "boosters_used": [
-        {
-          "id": 10,
-          "name": "Booster 10",
-          "gameday": 39
-        },
-        {
-          "id": 9,
-          "name": "Foreign Stars",
-          "gameday": 47
-        },
-        {
-          "id": 3,
-          "name": "Super Captain",
-          "gameday": 49
-        },
-        {
-          "id": 12,
-          "name": "Power Play",
-          "gameday": 50
-        }
-      ],
+      "transfer_efficiency": 90.4,
+      "boosters_used": 4,
       "boosters_remaining": 6,
       "matches": [
         {
+          "match_name": "Match 58",
+          "match_num": 58,
+          "transfers": 5,
+          "teams": "PBKS vs MI",
+          "points": 230.0,
+          "captain": "P. Singh",
+          "vc": "R. Rickelton",
+          "wk": 2,
+          "bat": 3,
+          "ar": 3,
+          "bowl": 3
+        },
+        {
           "match_name": "Match 57",
           "match_num": 57,
-          "points": 647.5,
-          "captain": "Josh Hazlewood",
-          "vc": "Bhuvneshwar Kumar",
           "transfers": 8,
-          "booster_used": "",
-          "teams": "RCB vs KKR"
+          "teams": "RCB vs KKR",
+          "points": 647.5,
+          "captain": "J. Hazlewood",
+          "vc": "B. Kumar",
+          "wk": 1,
+          "bat": 5,
+          "ar": 2,
+          "bowl": 3
         },
         {
           "match_name": "Match 56",
@@ -183,44 +179,16 @@
           "wk": 1,
           "bat": 4,
           "ar": 2,
-          "bowl": 4,
-          "booster_used": ""
-        },
-        {
-          "match_name": "Match 55",
-          "match_num": 55,
-          "transfers": 5,
-          "teams": "PBKS vs DC",
-          "points": 330.0,
-          "captain": "C. Connolly",
-          "vc": "A. Patel",
-          "wk": 2,
-          "bat": 3,
-          "ar": 3,
-          "bowl": 3
-        },
-        {
-          "match_name": "Match 54",
-          "match_num": 54,
-          "transfers": 5,
-          "teams": "RCB vs MI",
-          "points": 455.0,
-          "captain": "J. Bethell",
-          "vc": "R. Rickelton",
-          "wk": 1,
-          "bat": 5,
-          "ar": 2,
-          "bowl": 3
+          "bowl": 4
         }
       ],
       "last_match": {
         "points": 647.5,
-        "captain": "Josh Hazlewood",
-        "vc": "Bhuvneshwar Kumar",
+        "captain": "J. Hazlewood",
+        "vc": "B. Kumar",
+        "playing_count": 5,
         "transfers": 8,
-        "playing_count": null,
-        "boosters": [],
-        "booster_used": ""
+        "boosters": []
       }
     },
     {
@@ -229,54 +197,39 @@
       "temid": 1852810401,
       "usrscoid": "3880773782",
       "is_me": false,
-      "total_points": 8637.0,
-      "transfers_used": 92,
-      "transfers_left": 68,
+      "total_points": 8744.0,
+      "transfers_used": 98,
+      "transfers_left": 62,
       "transfers_this_match": 4,
-      "transfer_efficiency": 94.2,
-      "boosters_used": [
-        {
-          "id": 9,
-          "name": "Foreign Stars",
-          "gameday": 41
-        },
-        {
-          "id": 3,
-          "name": "Super Captain",
-          "gameday": 39
-        },
-        {
-          "id": 9,
-          "name": "Foreign Stars",
-          "gameday": 44
-        },
-        {
-          "id": 11,
-          "name": "Booster 11",
-          "gameday": 45
-        },
-        {
-          "id": 10,
-          "name": "Booster 10",
-          "gameday": 49
-        },
-        {
-          "id": 12,
-          "name": "Power Play",
-          "gameday": 52
-        }
-      ],
+      "transfer_efficiency": 89.2,
+      "boosters_used": 6,
       "boosters_remaining": 4,
       "matches": [
         {
+          "match_name": "Match 58",
+          "match_num": 58,
+          "transfers": 6,
+          "teams": "PBKS vs MI",
+          "points": 107.0,
+          "captain": "S. Iyer",
+          "vc": "J. Bumrah",
+          "wk": 1,
+          "bat": 5,
+          "ar": 2,
+          "bowl": 3
+        },
+        {
           "match_name": "Match 57",
           "match_num": 57,
-          "points": 184.5,
-          "captain": "Cameron Green",
-          "vc": "Bhuvneshwar Kumar",
           "transfers": 4,
-          "booster_used": "",
-          "teams": "RCB vs KKR"
+          "teams": "RCB vs KKR",
+          "points": 184.5,
+          "captain": "C. Green",
+          "vc": "B. Kumar",
+          "wk": 1,
+          "bat": 5,
+          "ar": 2,
+          "bowl": 3
         },
         {
           "match_name": "Match 56",
@@ -289,44 +242,16 @@
           "wk": 1,
           "bat": 3,
           "ar": 4,
-          "bowl": 3,
-          "booster_used": ""
-        },
-        {
-          "match_name": "Match 55",
-          "match_num": 55,
-          "transfers": 6,
-          "teams": "PBKS vs DC",
-          "points": 414.5,
-          "captain": "C. Connolly",
-          "vc": "K. Rahul",
-          "wk": 1,
-          "bat": 4,
-          "ar": 3,
           "bowl": 3
-        },
-        {
-          "match_name": "Match 54",
-          "match_num": 54,
-          "transfers": 3,
-          "teams": "RCB vs MI",
-          "points": 442.0,
-          "captain": "V. Kohli",
-          "vc": "R. Rickelton",
-          "wk": 1,
-          "bat": 5,
-          "ar": 1,
-          "bowl": 4
         }
       ],
       "last_match": {
         "points": 184.5,
-        "captain": "Cameron Green",
-        "vc": "Bhuvneshwar Kumar",
+        "captain": "C. Green",
+        "vc": "B. Kumar",
+        "playing_count": 8,
         "transfers": 4,
-        "playing_count": null,
-        "boosters": [],
-        "booster_used": ""
+        "boosters": []
       }
     },
     {
@@ -335,49 +260,39 @@
       "temid": 1880300107,
       "usrscoid": "a1037d6a-60f1-70ee-b431-13f9c1503ea6",
       "is_me": false,
-      "total_points": 8433.5,
-      "transfers_used": 100,
-      "transfers_left": 60,
+      "total_points": 8522.5,
+      "transfers_used": 105,
+      "transfers_left": 55,
       "transfers_this_match": 6,
-      "transfer_efficiency": 80.6,
-      "boosters_used": [
-        {
-          "id": 3,
-          "name": "Super Captain",
-          "gameday": 39
-        },
-        {
-          "id": 9,
-          "name": "Foreign Stars",
-          "gameday": 47
-        },
-        {
-          "id": 9,
-          "name": "Foreign Stars",
-          "gameday": 56
-        },
-        {
-          "id": 12,
-          "name": "Power Play",
-          "gameday": 43
-        },
-        {
-          "id": 12,
-          "name": "Power Play",
-          "gameday": 46
-        }
-      ],
+      "transfer_efficiency": 81.2,
+      "boosters_used": 5,
       "boosters_remaining": 5,
       "matches": [
         {
+          "match_name": "Match 58",
+          "match_num": 58,
+          "transfers": 5,
+          "teams": "PBKS vs MI",
+          "points": 89.0,
+          "captain": "R. Rickelton",
+          "vc": "J. Bumrah",
+          "wk": 1,
+          "bat": 3,
+          "ar": 3,
+          "bowl": 4
+        },
+        {
           "match_name": "Match 57",
           "match_num": 57,
-          "points": 420.5,
-          "captain": "Bhuvneshwar Kumar",
-          "vc": "Josh Hazlewood",
           "transfers": 6,
-          "booster_used": "",
-          "teams": "RCB vs KKR"
+          "teams": "RCB vs KKR",
+          "points": 420.5,
+          "captain": "B. Kumar",
+          "vc": "J. Hazlewood",
+          "wk": 1,
+          "bat": 3,
+          "ar": 2,
+          "bowl": 5
         },
         {
           "match_name": "Match 56",
@@ -390,44 +305,16 @@
           "wk": 3,
           "bat": 3,
           "ar": 2,
-          "bowl": 3,
-          "booster_used": "Foreign Stars"
-        },
-        {
-          "match_name": "Match 55",
-          "match_num": 55,
-          "transfers": 6,
-          "teams": "PBKS vs DC",
-          "points": 293.5,
-          "captain": "P. Arya",
-          "vc": "K. Rahul",
-          "wk": 4,
-          "bat": 3,
-          "ar": 1,
-          "bowl": 3
-        },
-        {
-          "match_name": "Match 54",
-          "match_num": 54,
-          "transfers": 6,
-          "teams": "RCB vs MI",
-          "points": 388.5,
-          "captain": "R. Rickelton",
-          "vc": "J. Bethell",
-          "wk": 1,
-          "bat": 6,
-          "ar": 1,
           "bowl": 3
         }
       ],
       "last_match": {
         "points": 420.5,
-        "captain": "Bhuvneshwar Kumar",
-        "vc": "Josh Hazlewood",
+        "captain": "B. Kumar",
+        "vc": "J. Hazlewood",
+        "playing_count": 6,
         "transfers": 6,
-        "playing_count": null,
-        "boosters": [],
-        "booster_used": ""
+        "boosters": []
       }
     },
     {
@@ -436,34 +323,39 @@
       "temid": 1883650702,
       "usrscoid": "d143cd6a-50b1-701e-e682-35763fc829ff",
       "is_me": false,
-      "total_points": 8290.5,
-      "transfers_used": 86,
-      "transfers_left": 74,
+      "total_points": 8466.5,
+      "transfers_used": 93,
+      "transfers_left": 67,
       "transfers_this_match": 0,
-      "transfer_efficiency": 93.0,
-      "boosters_used": [
-        {
-          "id": 9,
-          "name": "Foreign Stars",
-          "gameday": 45
-        },
-        {
-          "id": 3,
-          "name": "Super Captain",
-          "gameday": 49
-        }
-      ],
+      "transfer_efficiency": 91.0,
+      "boosters_used": 2,
       "boosters_remaining": 8,
       "matches": [
         {
+          "match_name": "Match 58",
+          "match_num": 58,
+          "transfers": 7,
+          "teams": "PBKS vs MI",
+          "points": 176.0,
+          "captain": "R. Sharma",
+          "vc": "P. Arya",
+          "wk": 2,
+          "bat": 5,
+          "ar": 1,
+          "bowl": 3
+        },
+        {
           "match_name": "Match 57",
           "match_num": 57,
-          "points": 81.0,
-          "captain": "Jacob Bethell",
-          "vc": "Travis Head",
           "transfers": 0,
-          "booster_used": "",
-          "teams": "RCB vs KKR"
+          "teams": "RCB vs KKR",
+          "points": 81.0,
+          "captain": "J. Bethell",
+          "vc": "T. Head",
+          "wk": 2,
+          "bat": 4,
+          "ar": 2,
+          "bowl": 3
         },
         {
           "match_name": "Match 56",
@@ -476,44 +368,16 @@
           "wk": 2,
           "bat": 4,
           "ar": 2,
-          "bowl": 3,
-          "booster_used": ""
-        },
-        {
-          "match_name": "Match 55",
-          "match_num": 55,
-          "transfers": 4,
-          "teams": "PBKS vs DC",
-          "points": 391.0,
-          "captain": "P. Arya",
-          "vc": "S. Iyer",
-          "wk": 1,
-          "bat": 5,
-          "ar": 2,
           "bowl": 3
-        },
-        {
-          "match_name": "Match 54",
-          "match_num": 54,
-          "transfers": 6,
-          "teams": "RCB vs MI",
-          "points": 341.0,
-          "captain": "J. Bethell",
-          "vc": "R. Sharma",
-          "wk": 1,
-          "bat": 5,
-          "ar": 1,
-          "bowl": 4
         }
       ],
       "last_match": {
         "points": 81.0,
-        "captain": "Jacob Bethell",
-        "vc": "Travis Head",
+        "captain": "J. Bethell",
+        "vc": "T. Head",
+        "playing_count": 7,
         "transfers": 0,
-        "playing_count": null,
-        "boosters": [],
-        "booster_used": ""
+        "boosters": []
       }
     },
     {
@@ -522,39 +386,39 @@
       "temid": 1901660301,
       "usrscoid": "b1c33dea-e0c1-7000-8404-81a3f486e811",
       "is_me": false,
-      "total_points": 8048.0,
-      "transfers_used": 89,
-      "transfers_left": 71,
+      "total_points": 8275.0,
+      "transfers_used": 95,
+      "transfers_left": 65,
       "transfers_this_match": 1,
-      "transfer_efficiency": 82.1,
-      "boosters_used": [
-        {
-          "id": 12,
-          "name": "Power Play",
-          "gameday": 39
-        },
-        {
-          "id": 3,
-          "name": "Super Captain",
-          "gameday": 49
-        },
-        {
-          "id": 9,
-          "name": "Foreign Stars",
-          "gameday": 56
-        }
-      ],
+      "transfer_efficiency": 87.1,
+      "boosters_used": 3,
       "boosters_remaining": 7,
       "matches": [
         {
+          "match_name": "Match 58",
+          "match_num": 58,
+          "transfers": 6,
+          "teams": "PBKS vs MI",
+          "points": 227.0,
+          "captain": "P. Singh",
+          "vc": "R. Rickelton",
+          "wk": 2,
+          "bat": 5,
+          "ar": 1,
+          "bowl": 3
+        },
+        {
           "match_name": "Match 57",
           "match_num": 57,
-          "points": 373.5,
-          "captain": "Bhuvneshwar Kumar",
-          "vc": "Cameron Green",
           "transfers": 1,
-          "booster_used": "",
-          "teams": "RCB vs KKR"
+          "teams": "RCB vs KKR",
+          "points": 373.5,
+          "captain": "B. Kumar",
+          "vc": "C. Green",
+          "wk": 1,
+          "bat": 4,
+          "ar": 3,
+          "bowl": 3
         },
         {
           "match_name": "Match 56",
@@ -567,44 +431,16 @@
           "wk": 2,
           "bat": 3,
           "ar": 3,
-          "bowl": 3,
-          "booster_used": "Foreign Stars"
-        },
-        {
-          "match_name": "Match 55",
-          "match_num": 55,
-          "transfers": 6,
-          "teams": "PBKS vs DC",
-          "points": 327.0,
-          "captain": "K. Rahul",
-          "vc": "P. Arya",
-          "wk": 3,
-          "bat": 3,
-          "ar": 2,
-          "bowl": 3
-        },
-        {
-          "match_name": "Match 54",
-          "match_num": 54,
-          "transfers": 4,
-          "teams": "RCB vs MI",
-          "points": 278.0,
-          "captain": "V. Kohli",
-          "vc": "R. Rickelton",
-          "wk": 2,
-          "bat": 4,
-          "ar": 2,
           "bowl": 3
         }
       ],
       "last_match": {
         "points": 373.5,
-        "captain": "Bhuvneshwar Kumar",
-        "vc": "Cameron Green",
+        "captain": "B. Kumar",
+        "vc": "C. Green",
+        "playing_count": 6,
         "transfers": 1,
-        "playing_count": null,
-        "boosters": [],
-        "booster_used": ""
+        "boosters": []
       }
     },
     {
@@ -613,49 +449,39 @@
       "temid": 1878020203,
       "usrscoid": "31339d2a-a0f1-7000-6174-eabf69600c33",
       "is_me": false,
-      "total_points": 7539.5,
-      "transfers_used": 90,
-      "transfers_left": 70,
+      "total_points": 7715.5,
+      "transfers_used": 93,
+      "transfers_left": 67,
       "transfers_this_match": 4,
-      "transfer_efficiency": 80.5,
-      "boosters_used": [
-        {
-          "id": 3,
-          "name": "Super Captain",
-          "gameday": 55
-        },
-        {
-          "id": 9,
-          "name": "Foreign Stars",
-          "gameday": 56
-        },
-        {
-          "id": 10,
-          "name": "Booster 10",
-          "gameday": 40
-        },
-        {
-          "id": 12,
-          "name": "Power Play",
-          "gameday": 42
-        },
-        {
-          "id": 12,
-          "name": "Power Play",
-          "gameday": 43
-        }
-      ],
+      "transfer_efficiency": 83.0,
+      "boosters_used": 5,
       "boosters_remaining": 5,
       "matches": [
         {
+          "match_name": "Match 58",
+          "match_num": 58,
+          "transfers": 3,
+          "teams": "PBKS vs MI",
+          "points": 176.0,
+          "captain": "S. Iyer",
+          "vc": "R. Rickelton",
+          "wk": 2,
+          "bat": 4,
+          "ar": 2,
+          "bowl": 3
+        },
+        {
           "match_name": "Match 57",
           "match_num": 57,
-          "points": 190.5,
-          "captain": "Josh Hazlewood",
-          "vc": "Bhuvneshwar Kumar",
           "transfers": 4,
-          "booster_used": "",
-          "teams": "RCB vs KKR"
+          "teams": "RCB vs KKR",
+          "points": 190.5,
+          "captain": "J. Hazlewood",
+          "vc": "B. Kumar",
+          "wk": 3,
+          "bat": 3,
+          "ar": 1,
+          "bowl": 4
         },
         {
           "match_name": "Match 56",
@@ -668,45 +494,54 @@
           "wk": 3,
           "bat": 4,
           "ar": 1,
-          "bowl": 3,
-          "booster_used": "Foreign Stars"
-        },
-        {
-          "match_name": "Match 55",
-          "match_num": 55,
-          "transfers": 11,
-          "teams": "PBKS vs DC",
-          "points": 959.0,
-          "captain": "P. Singh",
-          "vc": "K. Rahul",
-          "wk": 2,
-          "bat": 4,
-          "ar": 2,
           "bowl": 3
-        },
-        {
-          "match_name": "Match 54",
-          "match_num": 54,
-          "transfers": 5,
-          "teams": "RCB vs MI",
-          "points": 240.0,
-          "captain": "V. Kohli",
-          "vc": "R. Rickelton",
-          "wk": 1,
-          "bat": 4,
-          "ar": 2,
-          "bowl": 4
         }
       ],
       "last_match": {
         "points": 190.5,
-        "captain": "Josh Hazlewood",
-        "vc": "Bhuvneshwar Kumar",
+        "captain": "J. Hazlewood",
+        "vc": "B. Kumar",
+        "playing_count": 6,
         "transfers": 4,
-        "playing_count": null,
-        "boosters": [],
-        "booster_used": ""
+        "boosters": []
       }
     }
-  ]
+  ],
+  "snapshot": {
+    "1843790901": {
+      "total_points": 9162.5,
+      "rank": 1,
+      "scraped_at": "2026-05-14T08:10:43.695435"
+    },
+    "1883130802": {
+      "total_points": 9042.0,
+      "rank": 2,
+      "scraped_at": "2026-05-14T08:10:43.695451"
+    },
+    "1852810401": {
+      "total_points": 8744.0,
+      "rank": 3,
+      "scraped_at": "2026-05-14T08:10:43.695454"
+    },
+    "1880300107": {
+      "total_points": 8522.5,
+      "rank": 4,
+      "scraped_at": "2026-05-14T08:10:43.695455"
+    },
+    "1883650702": {
+      "total_points": 8466.5,
+      "rank": 5,
+      "scraped_at": "2026-05-14T08:10:43.695457"
+    },
+    "1901660301": {
+      "total_points": 8275.0,
+      "rank": 6,
+      "scraped_at": "2026-05-14T08:10:43.695458"
+    },
+    "1878020203": {
+      "total_points": 7715.5,
+      "rank": 7,
+      "scraped_at": "2026-05-14T08:10:43.695460"
+    }
+  }
 }
