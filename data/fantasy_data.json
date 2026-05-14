@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-13T22:14:03.807561",
+  "last_updated": "2026-05-13T22:36:37.958578",
   "last_match": {
     "name": "Match 57",
     "teams": "RCB vs KKR",
@@ -18,13 +18,13 @@
     ]
   },
   "next_match": {
-    "name": "Match 57",
+    "name": "Match 58",
     "teams": "\u2014",
     "date": "",
     "venue": ""
   },
   "last_gameday": 57,
-  "next_gameday": 57,
+  "next_gameday": 58,
   "members": [
     {
       "rank": 1,
@@ -33,9 +33,9 @@
       "usrscoid": "71f3ad4a-a0d1-70c1-cf04-a4e43818bc3a",
       "is_me": true,
       "total_points": 8970.5,
-      "transfers_used": 111,
-      "transfers_left": 49,
-      "transfers_this_match": 5,
+      "transfers_used": 115,
+      "transfers_left": 45,
+      "transfers_this_match": 4,
       "transfer_efficiency": 76.9,
       "boosters_used": [
         {
@@ -50,7 +50,7 @@
         },
         {
           "id": 9,
-          "name": "Wildcard",
+          "name": "Foreign Stars",
           "gameday": 41
         },
         {
@@ -70,9 +70,9 @@
           "match_name": "Match 57",
           "match_num": 57,
           "points": 155.5,
-          "captain": "B. Kumar",
-          "vc": "S. Narine",
-          "transfers": null,
+          "captain": "Bhuvneshwar Kumar",
+          "vc": "Sunil Narine",
+          "transfers": 4,
           "booster_used": "",
           "teams": "RCB vs KKR"
         },
@@ -119,9 +119,9 @@
       ],
       "last_match": {
         "points": 155.5,
-        "captain": "B. Kumar",
-        "vc": "S. Narine",
-        "transfers": null,
+        "captain": "Bhuvneshwar Kumar",
+        "vc": "Sunil Narine",
+        "transfers": 4,
         "playing_count": null,
         "boosters": [],
         "booster_used": ""
@@ -134,9 +134,9 @@
       "usrscoid": "91530d2a-a061-70fe-f477-027bddaf8f7e",
       "is_me": false,
       "total_points": 8812.0,
-      "transfers_used": 87,
-      "transfers_left": 73,
-      "transfers_this_match": 5,
+      "transfers_used": 95,
+      "transfers_left": 65,
+      "transfers_this_match": 8,
       "transfer_efficiency": 90.6,
       "boosters_used": [
         {
@@ -146,7 +146,7 @@
         },
         {
           "id": 9,
-          "name": "Wildcard",
+          "name": "Foreign Stars",
           "gameday": 47
         },
         {
@@ -166,9 +166,9 @@
           "match_name": "Match 57",
           "match_num": 57,
           "points": 647.5,
-          "captain": "J. Hazlewood",
-          "vc": "B. Kumar",
-          "transfers": null,
+          "captain": "Josh Hazlewood",
+          "vc": "Bhuvneshwar Kumar",
+          "transfers": 8,
           "booster_used": "",
           "teams": "RCB vs KKR"
         },
@@ -215,9 +215,9 @@
       ],
       "last_match": {
         "points": 647.5,
-        "captain": "J. Hazlewood",
-        "vc": "B. Kumar",
-        "transfers": null,
+        "captain": "Josh Hazlewood",
+        "vc": "Bhuvneshwar Kumar",
+        "transfers": 8,
         "playing_count": null,
         "boosters": [],
         "booster_used": ""
@@ -230,14 +230,14 @@
       "usrscoid": "3880773782",
       "is_me": false,
       "total_points": 8637.0,
-      "transfers_used": 88,
-      "transfers_left": 72,
-      "transfers_this_match": 5,
+      "transfers_used": 92,
+      "transfers_left": 68,
+      "transfers_this_match": 4,
       "transfer_efficiency": 94.2,
       "boosters_used": [
         {
           "id": 9,
-          "name": "Wildcard",
+          "name": "Foreign Stars",
           "gameday": 41
         },
         {
@@ -247,7 +247,7 @@
         },
         {
           "id": 9,
-          "name": "Wildcard",
+          "name": "Foreign Stars",
           "gameday": 44
         },
         {
@@ -272,9 +272,9 @@
           "match_name": "Match 57",
           "match_num": 57,
           "points": 184.5,
-          "captain": "C. Green",
-          "vc": "B. Kumar",
-          "transfers": null,
+          "captain": "Cameron Green",
+          "vc": "Bhuvneshwar Kumar",
+          "transfers": 4,
           "booster_used": "",
           "teams": "RCB vs KKR"
         },
@@ -321,9 +321,9 @@
       ],
       "last_match": {
         "points": 184.5,
-        "captain": "C. Green",
-        "vc": "B. Kumar",
-        "transfers": null,
+        "captain": "Cameron Green",
+        "vc": "Bhuvneshwar Kumar",
+        "transfers": 4,
         "playing_count": null,
         "boosters": [],
         "booster_used": ""
@@ -336,8 +336,8 @@
       "usrscoid": "a1037d6a-60f1-70ee-b431-13f9c1503ea6",
       "is_me": false,
       "total_points": 8433.5,
-      "transfers_used": 94,
-      "transfers_left": 66,
+      "transfers_used": 100,
+      "transfers_left": 60,
       "transfers_this_match": 6,
       "transfer_efficiency": 80.6,
       "boosters_used": [
@@ -348,12 +348,12 @@
         },
         {
           "id": 9,
-          "name": "Wildcard",
+          "name": "Foreign Stars",
           "gameday": 47
         },
         {
           "id": 9,
-          "name": "Wildcard",
+          "name": "Foreign Stars",
           "gameday": 56
         },
         {
@@ -373,9 +373,9 @@
           "match_name": "Match 57",
           "match_num": 57,
           "points": 420.5,
-          "captain": "B. Kumar",
-          "vc": "J. Hazlewood",
-          "transfers": null,
+          "captain": "Bhuvneshwar Kumar",
+          "vc": "Josh Hazlewood",
+          "transfers": 6,
           "booster_used": "",
           "teams": "RCB vs KKR"
         },
@@ -422,9 +422,9 @@
       ],
       "last_match": {
         "points": 420.5,
-        "captain": "B. Kumar",
-        "vc": "J. Hazlewood",
-        "transfers": null,
+        "captain": "Bhuvneshwar Kumar",
+        "vc": "Josh Hazlewood",
+        "transfers": 6,
         "playing_count": null,
         "boosters": [],
         "booster_used": ""
@@ -439,12 +439,12 @@
       "total_points": 8290.5,
       "transfers_used": 86,
       "transfers_left": 74,
-      "transfers_this_match": 6,
+      "transfers_this_match": 0,
       "transfer_efficiency": 93.0,
       "boosters_used": [
         {
           "id": 9,
-          "name": "Wildcard",
+          "name": "Foreign Stars",
           "gameday": 45
         },
         {
@@ -459,9 +459,9 @@
           "match_name": "Match 57",
           "match_num": 57,
           "points": 81.0,
-          "captain": "J. Bethell",
-          "vc": "T. Head",
-          "transfers": null,
+          "captain": "Jacob Bethell",
+          "vc": "Travis Head",
+          "transfers": 0,
           "booster_used": "",
           "teams": "RCB vs KKR"
         },
@@ -508,9 +508,9 @@
       ],
       "last_match": {
         "points": 81.0,
-        "captain": "J. Bethell",
-        "vc": "T. Head",
-        "transfers": null,
+        "captain": "Jacob Bethell",
+        "vc": "Travis Head",
+        "transfers": 0,
         "playing_count": null,
         "boosters": [],
         "booster_used": ""
@@ -523,9 +523,9 @@
       "usrscoid": "b1c33dea-e0c1-7000-8404-81a3f486e811",
       "is_me": false,
       "total_points": 8048.0,
-      "transfers_used": 88,
-      "transfers_left": 72,
-      "transfers_this_match": 6,
+      "transfers_used": 89,
+      "transfers_left": 71,
+      "transfers_this_match": 1,
       "transfer_efficiency": 82.1,
       "boosters_used": [
         {
@@ -540,7 +540,7 @@
         },
         {
           "id": 9,
-          "name": "Wildcard",
+          "name": "Foreign Stars",
           "gameday": 56
         }
       ],
@@ -550,9 +550,9 @@
           "match_name": "Match 57",
           "match_num": 57,
           "points": 373.5,
-          "captain": "B. Kumar",
-          "vc": "C. Green",
-          "transfers": null,
+          "captain": "Bhuvneshwar Kumar",
+          "vc": "Cameron Green",
+          "transfers": 1,
           "booster_used": "",
           "teams": "RCB vs KKR"
         },
@@ -599,9 +599,9 @@
       ],
       "last_match": {
         "points": 373.5,
-        "captain": "B. Kumar",
-        "vc": "C. Green",
-        "transfers": null,
+        "captain": "Bhuvneshwar Kumar",
+        "vc": "Cameron Green",
+        "transfers": 1,
         "playing_count": null,
         "boosters": [],
         "booster_used": ""
@@ -614,9 +614,9 @@
       "usrscoid": "31339d2a-a0f1-7000-6174-eabf69600c33",
       "is_me": false,
       "total_points": 7539.5,
-      "transfers_used": 86,
-      "transfers_left": 74,
-      "transfers_this_match": 7,
+      "transfers_used": 90,
+      "transfers_left": 70,
+      "transfers_this_match": 4,
       "transfer_efficiency": 80.5,
       "boosters_used": [
         {
@@ -626,7 +626,7 @@
         },
         {
           "id": 9,
-          "name": "Wildcard",
+          "name": "Foreign Stars",
           "gameday": 56
         },
         {
@@ -651,9 +651,9 @@
           "match_name": "Match 57",
           "match_num": 57,
           "points": 190.5,
-          "captain": "J. Hazlewood",
-          "vc": "B. Kumar",
-          "transfers": null,
+          "captain": "Josh Hazlewood",
+          "vc": "Bhuvneshwar Kumar",
+          "transfers": 4,
           "booster_used": "",
           "teams": "RCB vs KKR"
         },
@@ -700,9 +700,9 @@
       ],
       "last_match": {
         "points": 190.5,
-        "captain": "J. Hazlewood",
-        "vc": "B. Kumar",
-        "transfers": null,
+        "captain": "Josh Hazlewood",
+        "vc": "Bhuvneshwar Kumar",
+        "transfers": 4,
         "playing_count": null,
         "boosters": [],
         "booster_used": ""

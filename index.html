@@ -393,10 +393,12 @@ async function load() {
       </tr>`;
   }
 
-  // ── Match table (always sorted by season rank) ──
+  // ── Match table — sorted by match pts desc, rank = match position ──
   const matchBody = document.getElementById('match-body');
-  const matchMembers = [...(data.members || [])].sort((a, b) => (a.rank || 99) - (b.rank || 99));
-  for (const m of matchMembers) {
+  const matchMembers = [...(data.members || [])]
+    .sort((a, b) => ((b.last_match||{}).points||0) - ((a.last_match||{}).points||0));
+  matchMembers.forEach((m, idx) => {
+    const matchRank = idx + 1;
     const trCls = m.is_me ? 'is-me' : '';
     const lmatch = m.last_match || {};
 
@@ -417,7 +419,7 @@ async function load() {
 
     matchBody.innerHTML += `
       <tr class="${trCls}">
-        <td>${rankBadge(m.rank)}</td>
+        <td>${rankBadge(matchRank)}</td>
         <td>${teamName(m)}</td>
         <td>${capHtml}</td>
         <td>${vcHtml}</td>
@@ -426,7 +428,7 @@ async function load() {
         <td class="r">${pts(mpts, ptsCls || 'val-big')}</td>
         <td class="r">${na(lmatch.transfers)}</td>
       </tr>`;
-  }
+  });
 }
 
 load();
