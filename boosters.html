@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fantasy Legends — Ready for Playoffs!</title>
+<style>
+  :root {
+    --bg:       #0a0e1a;
+    --surface:  #12182b;
+    --card:     #1a2240;
+    --border:   #2a3560;
+    --accent:   #4f8ef7;
+    --gold:     #f5c518;
+    --green:    #30d158;
+    --red:      #ff453a;
+    --orange:   #ff9f0a;
+    --purple:   #bf5af2;
+    --teal:     #5ac8fa;
+    --text:     #f0f0f5;
+    --muted:    #8e8ea0;
+    --faint:    #3a4060;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    min-height: 100vh;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    background: linear-gradient(135deg, #0d1b3e 0%, #1a0a3e 50%, #0d1b3e 100%);
+    border-bottom: 1px solid var(--border);
+    padding: 36px 24px 28px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 80% 60% at 50% -10%, rgba(79,142,247,0.18) 0%, transparent 70%);
+  }
+  .hero-badge {
+    display: inline-block;
+    background: linear-gradient(90deg, #f5c518, #ff9f0a);
+    color: #0a0e1a;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+  }
+  .hero h1 {
+    font-size: clamp(24px, 5vw, 42px);
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    background: linear-gradient(135deg, #fff 0%, #aac4ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+  }
+  .hero-sub {
+    color: var(--muted);
+    font-size: 14px;
+    margin-top: 6px;
+    position: relative;
+  }
+  .hero-sub strong { color: var(--accent); }
+
+  /* ── STANDINGS BAR ── */
+  .standings-bar {
+    display: flex;
+    gap: 8px;
+    padding: 16px 20px;
+    overflow-x: auto;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .standings-bar::-webkit-scrollbar { display: none; }
+  .s-pill {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 8px 12px;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+  .s-pill .rank {
+    width: 20px; height: 20px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 11px; font-weight: 700;
+  }
+  .rank-1 { background: linear-gradient(135deg,#f5c518,#e6a800); color:#000; }
+  .rank-2 { background: linear-gradient(135deg,#b0b8c8,#8a94a6); color:#000; }
+  .rank-3 { background: linear-gradient(135deg,#cd7f32,#a05a20); color:#fff; }
+  .rank-n { background: var(--faint); color: var(--muted); }
+  .s-pill .name { font-weight: 600; }
+  .s-pill .pts { color: var(--gold); font-weight: 700; margin-left: 4px; }
+  .s-pill .rem {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 2px 7px;
+    font-size: 11px;
+    color: var(--green);
+    font-weight: 600;
+    margin-left: 4px;
+  }
+
+  /* ── LEGEND ── */
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 14px 20px;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    align-items: center;
+  }
+  .legend-label { font-size: 11px; color: var(--muted); margin-right: 4px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.8px; }
+  .bchip {
+    display: inline-flex; align-items: center; gap: 5px;
+    font-size: 11px; font-weight: 600;
+    padding: 3px 10px; border-radius: 20px;
+    border: 1px solid;
+  }
+  .bchip.dp  { background: rgba(95,50,220,0.15); border-color: #7b5cf5; color: #b69fff; }
+  .bchip.tc  { background: rgba(245,197,24,0.12); border-color: #c9a400; color: #f5c518; }
+  .bchip.iw  { background: rgba(255,69,58,0.12);  border-color: #c83830; color: #ff6b63; }
+  .bchip.fs  { background: rgba(48,209,88,0.12);  border-color: #25a550; color: #4cd96d; }
+  .bchip.wc  { background: rgba(90,200,250,0.12); border-color: #3a9fc0; color: #5ac8fa; }
+  .bchip.fh  { background: rgba(255,159,10,0.12); border-color: #cc7a00; color: #ff9f0a; }
+
+  /* ── GRID ── */
+  .page { max-width: 1280px; margin: 0 auto; padding: 24px 16px 40px; }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 16px;
+  }
+
+  /* ── TEAM CARD ── */
+  .team-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+  .team-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+  }
+
+  .card-header {
+    padding: 14px 16px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--faint);
+    background: linear-gradient(90deg, rgba(79,142,247,0.07), transparent);
+  }
+  .card-header-left { display: flex; align-items: center; gap: 10px; }
+  .card-rank {
+    width: 28px; height: 28px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 13px; font-weight: 800;
+    flex-shrink: 0;
+  }
+  .card-name { font-size: 15px; font-weight: 700; }
+  .card-pts { font-size: 13px; color: var(--gold); font-weight: 700; }
+
+  .card-meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .used-count {
+    font-size: 11px;
+    color: var(--muted);
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 2px 8px;
+  }
+  .rem-count {
+    font-size: 11px;
+    font-weight: 700;
+    border-radius: 6px;
+    padding: 2px 8px;
+  }
+  .rem-0 { background: rgba(255,69,58,0.15); color: var(--red); border: 1px solid #7a2020; }
+  .rem-1 { background: rgba(255,159,10,0.15); color: var(--orange); border: 1px solid #7a5000; }
+  .rem-2 { background: rgba(79,142,247,0.15); color: var(--accent); border: 1px solid #2a4a7a; }
+  .rem-3 { background: rgba(48,209,88,0.15); color: var(--green); border: 1px solid #1a6030; }
+  .rem-4 { background: rgba(48,209,88,0.2); color: #4ade80; border: 1px solid #156040; }
+
+  /* ── BOOSTER TABLE ── */
+  .booster-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12.5px;
+  }
+  .booster-table thead th {
+    padding: 6px 10px;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--muted);
+    text-align: left;
+    background: rgba(0,0,0,0.2);
+    border-bottom: 1px solid var(--faint);
+  }
+  .booster-table thead th:last-child,
+  .booster-table thead th:nth-child(3) { text-align: right; }
+
+  .booster-table td {
+    padding: 8px 10px;
+    border-bottom: 1px solid rgba(42,53,96,0.5);
+    vertical-align: middle;
+  }
+  .booster-table tr:last-child td { border-bottom: none; }
+
+  .b-name { display: flex; align-items: center; gap: 7px; font-weight: 600; }
+  .b-icon {
+    width: 22px; height: 22px;
+    border-radius: 6px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 12px; flex-shrink: 0;
+  }
+
+  .b-status-avail {
+    display: inline-flex; align-items: center; gap: 4px;
+    font-size: 11px; font-weight: 700;
+    color: var(--green); background: rgba(48,209,88,0.12);
+    border: 1px solid rgba(48,209,88,0.3);
+    border-radius: 6px; padding: 2px 8px;
+  }
+  .b-status-used {
+    display: inline-flex; align-items: center; gap: 4px;
+    font-size: 11px; font-weight: 600;
+    color: var(--muted); background: rgba(255,255,255,0.04);
+    border: 1px solid var(--faint);
+    border-radius: 6px; padding: 2px 8px;
+  }
+  .b-status-partial {
+    display: inline-flex; align-items: center; gap: 4px;
+    font-size: 11px; font-weight: 700;
+    color: var(--orange); background: rgba(255,159,10,0.12);
+    border: 1px solid rgba(255,159,10,0.3);
+    border-radius: 6px; padding: 2px 8px;
+  }
+
+  .match-ref {
+    font-size: 11px;
+    color: var(--muted);
+  }
+  .match-ref .m-tag {
+    display: inline-block;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 1px 5px;
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--accent);
+    margin-right: 3px;
+  }
+  .match-pts {
+    font-size: 12px;
+    font-weight: 700;
+    text-align: right;
+    color: var(--text);
+  }
+  .pts-high { color: #4ade80; }
+  .pts-mid  { color: var(--gold); }
+
+  /* ── FOOTER ── */
+  .footer {
+    text-align: center;
+    padding: 24px;
+    font-size: 12px;
+    color: var(--muted);
+    border-top: 1px solid var(--border);
+  }
+  .footer a { color: var(--accent); text-decoration: none; }
+
+  @media (max-width: 480px) {
+    .grid { grid-template-columns: 1fr; }
+    .hero { padding: 24px 16px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-badge">⚡ Fantasy Legends · IPL 2026</div>
+  <h1>Ready for Playoffs!</h1>
+  <p class="hero-sub">Booster status for all 7 teams &nbsp;·&nbsp; <strong>Match 70 complete</strong> &nbsp;·&nbsp; ~4 matches remaining</p>
+</div>
+
+<!-- STANDINGS BAR -->
+<div class="standings-bar">
+  <div class="s-pill">
+    <span class="rank rank-1">1</span>
+    <span class="name">Lost XI</span>
+    <span class="pts">15,905</span>
+    <span class="rem">1 left</span>
+  </div>
+  <div class="s-pill">
+    <span class="rank rank-2">2</span>
+    <span class="name">Debba meeda debba</span>
+    <span class="pts">15,743</span>
+    <span class="rem">3 left</span>
+  </div>
+  <div class="s-pill">
+    <span class="rank rank-3">3</span>
+    <span class="name">Assam 11</span>
+    <span class="pts">15,406.5</span>
+    <span class="rem">3 left</span>
+  </div>
+  <div class="s-pill">
+    <span class="rank rank-n">4</span>
+    <span class="name">Leftover Challengers</span>
+    <span class="pts">14,802.5</span>
+    <span class="rem">3 left</span>
+  </div>
+  <div class="s-pill">
+    <span class="rank rank-n">5</span>
+    <span class="name">Just for friendship</span>
+    <span class="pts">14,523.5</span>
+    <span class="rem">2 left</span>
+  </div>
+  <div class="s-pill">
+    <span class="rank rank-n">6</span>
+    <span class="name">Avakai Biryani</span>
+    <span class="pts">13,783.5</span>
+    <span class="rem">3 left</span>
+  </div>
+  <div class="s-pill">
+    <span class="rank rank-n">7</span>
+    <span class="name">Athos 11</span>
+    <span class="pts">12,604.5</span>
+    <span class="rem">4 left</span>
+  </div>
+</div>
+
+<!-- LEGEND -->
+<div class="legend">
+  <span class="legend-label">Boosters</span>
+  <span class="bchip dp">⚡ Double Power</span>
+  <span class="bchip tc">👑 Triple Captain</span>
+  <span class="bchip iw">🏏 Indian Warriors</span>
+  <span class="bchip fs">🌍 Foreign Stars</span>
+  <span class="bchip wc">🃏 Wild Card</span>
+  <span class="bchip fh">🎯 Free Hit</span>
+</div>
+
+<!-- MAIN GRID -->
+<div class="page">
+<div class="grid">
+
+<!-- ── 1. LOST XI ── -->
+<div class="team-card">
+  <div class="card-header">
+    <div class="card-header-left">
+      <span class="card-rank rank-1">1</span>
+      <div>
+        <div class="card-name">Lost XI</div>
+        <div class="card-pts">15,905.0 pts</div>
+      </div>
+    </div>
+    <div class="card-meta">
+      <span class="used-count">9 used</span>
+      <span class="rem-count rem-1">1 left</span>
+    </div>
+  </div>
+  <table class="booster-table">
+    <thead><tr><th>Booster</th><th>Status</th><th style="text-align:center">Match</th><th>Pts</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><span class="b-name"><span class="b-icon" style="background:rgba(95,50,220,0.2)">⚡</span><span class="bchip dp" style="border:none;background:none;padding:0">Double Power</span></span></td>
+        <td><span class="b-status-used">✗ Used ×2</span></td>
+        <td class="match-ref"><span class="m-tag">M39</span><span class="m-tag">M64</span></td>
+        <td class="match-pts"><span class="pts-high">949</span> · <span class="pts-high">1,629</span></td>
+      </tr>
+      <tr>
+        <td><span class="b-name"><span class="b-icon" style="background:rgba(245,197,24,0.2)">👑</span><span class="bchip tc" style="border:none;background:none;padding:0">Triple Captain</span></span></td>
+        <td><span class="b-status-used">✗ Used ×2</span></td>
+        <td class="match-ref"><span class="m-tag">M43</span><span class="m-tag">M46</span></td>
+        <td class="match-pts">527.5 · 293</td>
+      </tr>
+      <tr>
+        <td><span class="b-name"><span class="b-icon" style="background:rgba(255,69,58,0.2)">🏏</span><span class="bchip iw" style="border:none;background:none;padding:0">Indian Warriors</span></span></td>
+        <td><span class="b-status-used">✗ Used ×2</span></td>
+        <td class="match-ref"><span class="m-tag">M67</span><span class="m-tag">M69</span></td>
+        <td class="match-pts"><span class="pts-high">1,311</span> · 759</td>
+      </tr>
+      <tr>
+        <td><span class="b-name"><span class="b-icon" style="background:rgba(48,209,88,0.2)">🌍</span><span class="bchip fs" style="border:none;background:none;padding:0">Foreign Stars</span></span></td>
+        <td><span class="b-status-used">✗ Used ×2</span></td>
+        <td class="match-ref"><span class="m-tag">M47</span><span class="m-tag">M56</span></td>
+        <td class="match-pts">859 · 534</td>
+      </tr>
+      <tr>
+        <td><span class="b-name"><span class="b-icon" style="background:rgba(90,200,250,0.2)">🃏</span><span class="bchip wc" style="border:none;background:none;padding:0">Wild Card</span></span></td>
+        <td><span class="b-status-used">✗ Used</span></td>
+        <td class="match-ref"><span class="m-tag">M66</span></td>
+        <td class="match-pts">635.5</td>
+      </tr>
+      <tr>
+        <td><span class="b-name"><span class="b-icon" style="background:rgba(255,159,10,0.2)">🎯</span><span class="bchip fh" style="border:none;background:none;padding:0">Free Hit</span></span></td>
+        <td><span class="b-status-avail">✓ Available</span></td>
+        <td class="match-ref">—</td>
+        <td class="match-pts">—</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ── 2. DEBBA MEEDA DEBBA ── -->
+<div class="team-card">
+  <div class="card-header">
+    <div class="card-header-left">
+      <span class="card-rank rank-2">2</span>
+      <div>
+        <div class="card-name">Debba meeda debba</div>
+        <div class="card-pts">15,743.0 pts</div>
+      </div>
+    </div>
+    <div class="card-meta">
+      <span class="used-count">7 used</span>
+      <span class="rem-count rem-3">3 left</span>
+    </div>
+  </div>
+  <table class="booster-table">
+    <thead><tr><th>Booster</th><th>Status</th><th style="text-align:center">Match</th><th>Pts</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><span class="b-name"><span class="b-icon" style="background:rgba(95,50,220,0.2)">⚡</span><span class="bchip dp" style="border:none;background:none;padding:0">Double Power</span></span></td>
+        <td><span class="b-status-used">✗ Used ×2</span></td>
+        <td class="match-ref"><span class="m-tag">M49</span><span class="m-tag">M67</span></td>
+        <td class="match-pts"><span class="pts-high">1,271</span> · <span class="pts-high">1,521</span></td>
+      </tr>
+      <tr>
+        <td><span class="b-name"><span class="b-icon" style="background:rgba(245,197,24,0.2)">👑</span><span class="bchip tc" style="border:none;background:none;padding:0">Triple Captain</span></span></td>
+        <td><span class="b-status-partial">◑ 1 left</span></td>
+        <td class="match-ref"><span class="m-tag">M68</span></td>
+        <td class="match-pts">323</td>
+      </tr>
+      <tr>
+        <td><span class="b-name"><span class="b-icon" style="background:rgba(255,69,58,0.2)">🏏</span><span class="bchip iw" style="border:none;background:none;padding:0">Indian Warriors</span></span></td>
+        <td><span class="b-status-partial">◑ 1 left</span></td>
+        <td class="match-ref"><span class="m-tag">M69</span></td>
+        <td class="match-pts">928</td>
+      </tr>
+      <tr>
+        <td><span class="b-name"><span class="b-icon" style="background:rgba(48,209,88,0.2)">🌍</span><span class="bchip fs" style="border:none;background:none;padding:0">Foreign Stars</span></span></td>
+        <td><span class="b-status-used">✗ Used ×2</span></td>
+        <td class="match-ref"><span class="m-tag">M45</span><span class="m-tag">M64</span></td>
+        <td class="match-pts">827 · <span class="pts-high">1,054</span></td>
+      </tr>
+      <tr>
+        <td><span class="b-name"><span class="b-icon" style="background:rgba(90,200,250,0.2)">🃏</span><span class="bchip wc" style="border:none;background:none;padding:0">Wild Card</span></span></td>
+        <td><span class="b-status-used">✗ Used</span></td>
+        <td class="match-ref"><span class="m-tag">M65</span></td>
+        <td class="match-pts">198.5</td>
+      </tr>
+      <tr>
+        <td><span class="b-name"><span class="b-icon" style="background:rgba(255,159,10,0.2)">🎯</span><span class="bchip fh" style="border:none;background:none;padding:0">Free Hit</span></span></td>
+        <td><span class="b-status-avail">✓ Available</span></td>
+        <td class="match-ref">—</td>
+        <td class="match-pts">—</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ── 3. ASSAM 11 ── -->
+<div class="team-card">
+  <div class="card-header">
+    <div class="card-header-left">
+      <span class="card-rank rank-3">3</span>
+      <div>
+        <div class="card-name">Assam 11</div>
+        <div class="card-pts">15,406.5 pts</div>
+      </div>
+    </div>
+    <div class="card-meta">
+      <span class="used-count">7 used</span>
+      <span class="rem-count rem-3">3 left</span>
+    </div>
+  </div>
+  <table class="booster-table">
+    <thead><tr><th>Booster</th><th>Status</th><th style="text-align:center">Match</th><th>Pts</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><span class="b-name"><span class="b-icon" style="background:rgba(95,50,220,0.2)">⚡</span><span class="bchip dp" style="border:none;background:none;padding:0">Double Power</span></span></td>
+        <td><span class="b-status-used">✗ Used ×2</span></td>
+        <td class="match-ref"><span class="m-tag">M49</span><span class="m-tag">M69</span></td>
+        <td class="match-pts"><span class="pts-high">1,245</span> · 925</td>
+      </tr>
+      <tr>
+        <td><span class="b-name"><span class="b-icon" style="background:rgba(245,197,24,0.2)">👑</span><span class="bchip tc" style="border:none;background:none;padding:0">Triple Captain</span></span></td>
+        <td><span class="b-status-used">✗ Used ×2</span></td>
+        <td class="match-ref"><span class="m-tag">M39</span><span class="m-tag">M67</span></td>
+        <td class="match-pts">268.5 · 828.5</td>
+      </tr>
+      <tr>
+        <td><span class="b-name"><span class="b-icon" style="background:rgba(255,69,58,0.2)">🏏</span><span class="bchip iw" style="border:none;background:none;padding:0">Indian Warriors</span></span></td>
+        <td><span class="b-status-avail">✓ Both Available</span></td>
+        <td class="match-ref">—</td>
+        <td class="match-pts">—</td>
+      </tr>
+      <tr>
+        <td><span class="b-name"><span class="b-icon" style="background:rgba(48,209,88,0.2)">🌍</span><span class="bchip fs" style="border:none;background:none;padding:0">Foreign Stars</span></span></td>
+        <td><span class="b-status-used">✗ Used ×2</span></td>
+        <td class="match-ref"><span class="m-tag">M56</span><span class="m-tag">M64</span></td>
+        <td class="match-pts">608 · <span class="pts-high">1,225</span></td>
+      </tr>
+      <tr>
+        <td><span class="b-name"><span class="b-icon" style="background:rgba(90,200,250,0.2)">🃏</span><span class="bchip wc" style="border:none;background:none;padding:0">Wild Card</span></span></td>
+        <td><span class="b-status-avail">✓ Available</span></td>
+        <td class="match-ref">—</td>
+        <td class="match-pts">—</td>
+      </tr>
+      <tr>
+        <td><span class="b-name"><span class="b-icon" style="background:rgba(255,159,10,0.2)">🎯</span><span class="bchip fh" style="border:none;background:none;padding:0">Free Hit</span></span></td>
+        <td><span class="b-status-used">✗ Used</span></td>
+        <td class="match-ref"><span class="m-tag">M63</span></td>
+        <td class="match-pts">543.5</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ── 4. LEFTOVER CHALLENGERS ── -->
+<div class="team-card">
+  <div class="card-header">
+    <div class="card-header-left">
+      <span class="card-rank rank-n">4</span>
+      <div>
+        <div class="card-name">Leftover Challengers</div>
+        <div class="card-pts">14,802.5 pts</div>
+      </div>
+    </div>
+    <div class="card-meta">
+      <span class="used-count">7 used</span>
+      <span class="rem-count rem-3">3 left</span>
+    </div>
+  </div>
+  <table class="booster-table">
+    <thead><tr><th>Booster</th><th>Status</th><th style="text-align:center">Match</th><th>Pts</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><span class="b-name"><span class="b-icon" style="background:rgba(95,50,220,0.2)">⚡</span><span class="bchip dp" style="border:none;background:none;padding:0">Double Power</span></span></td>
+        <td><span class="b-status-partial">◑ 1 left</span></td>
+        <td class="match-ref"><span class="m-tag">M49</span></td>
+        <td class="match-pts"><span class="pts-high">1,283</span></td>
+      </tr>
+      <tr>
+        <td><span class="b-name"><span class="b-icon" style="background:rgba(245,197,24,0.2)">👑</span><span class="bchip tc" style="border:none;background:none;padding:0">Triple Captain</span></span></td>
+        <td><span class="b-status-used">✗ Used ×2</span></td>
+        <td class="match-ref"><span class="m-tag">M50</span><span class="m-tag">M69</span></td>
+        <td class="match-pts">323 · 387.5</td>
+      </tr>
+      <tr>
+        <td><span class="b-name"><span class="b-icon" style="background:rgba(255,69,58,0.2)">🏏</span><span class="bchip iw" style="border:none;background:none;padding:0">Indian Warriors</span></span></td>
+        <td><span class="b-status-partial">◑ 1 left</span></td>
+        <td class="match-ref"><span class="m-tag">M39</span></td>
+        <td class="match-pts">724</td>
+      </tr>
+      <tr>
+        <td><span class="b-name"><span class="b-icon" style="background:rgba(48,209,88,0.2)">🌍</span><span class="bchip fs" style="border:none;background:none;padding:0">Foreign Stars</span></span></td>
+        <td><span class="b-status-partial">◑ 1 left</span></td>
+        <td class="match-ref"><span class="m-tag">M47</span></td>
+        <td class="match-pts">756</td>
+      </tr>
+      <tr>
+        <td><span class="b-name"><span class="b-icon" style="background:rgba(90,200,250,0.2)">🃏</span><span class="bchip wc" style="border:none;background:none;padding:0">Wild Card</span></span></td>
+        <td><span class="b-status-used">✗ Used</span></td>
+        <td class="match-ref"><span class="m-tag">M62</span></td>
+        <td class="match-pts">804.5</td>
+      </tr>
+      <tr>
+        <td><span class="b-name"><span class="b-icon" style="background:rgba(255,159,10,0.2)">🎯</span><span class="bchip fh" style="border:none;background:none;padding:0">Free Hit</span></span></td>
+        <td><span class="b-status-used">✗ Used</span></td>
+        <td class="match-ref" style="font-size:10px;color:var(--muted)">unconfirmed</td>
+        <td class="match-pts">—</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ── 5. JUST FOR FRIENDSHIP ── -->
+<div class="team-card">
+  <div class="card-header">
+    <div class="card-header-left">
+      <span class="card-rank rank-n">5</span>
+      <div>
+        <div class="card-name">Just for friendship</div>
+        <div class="card-pts">14,523.5 pts</div>
+      </div>
+    </div>
+    <div class="card-meta">
+      <span class="used-count">8 used</span>
+      <span class="rem-count rem-2">2 left</span>
+    </div>
+  </div>
+  <table class="booster-table">
+    <thead><tr><th>Booster</th><th>Status</th><th style="text-align:center">Match</th><th>Pts</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><span class="b-name"><span class="b-icon" style="background:rgba(95,50,220,0.2)">⚡</span><span class="bchip dp" style="border:none;background:none;padding:0">Double Power</span></span></td>
+        <td><span class="b-status-partial">◑ 1 left</span></td>
+        <td class="match-ref"><span class="m-tag">M39</span></td>
+        <td class="match-pts">537</td>
+      </tr>
+      <tr>
+        <td><span class="b-name"><span class="b-icon" style="background:rgba(245,197,24,0.2)">👑</span><span class="bchip tc" style="border:none;background:none;padding:0">Triple Captain</span></span></td>
+        <td><span class="b-status-used">✗ Used ×2</span></td>
+        <td class="match-ref"><span class="m-tag">M52</span><span class="m-tag">M65</span></td>
+        <td class="match-pts">314 · 203</td>
+      </tr>
+      <tr>
+        <td><span class="b-name"><span class="b-icon" style="background:rgba(255,69,58,0.2)">🏏</span><span class="bchip iw" style="border:none;background:none;padding:0">Indian Warriors</span></span></td>
+        <td><span class="b-status-used">✗ Used ×2</span></td>
+        <td class="match-ref"><span class="m-tag">M49</span><span class="m-tag">M66</span></td>
+        <td class="match-pts">958 · <span class="pts-high">1,262</span></td>
+      </tr>
+      <tr>
+        <td><span class="b-name"><span class="b-icon" style="background:rgba(48,209,88,0.2)">🌍</span><span class="bchip fs" style="border:none;background:none;padding:0">Foreign Stars</span></span></td>
+        <td><span class="b-status-used">✗ Used ×2</span></td>
+        <td class="match-ref"><span class="m-tag">M41</span><span class="m-tag">M44</span></td>
+        <td class="match-pts"><span class="pts-high">1,321</span> · 443</td>
+      </tr>
+      <tr>
+        <td><span class="b-name"><span class="b-icon" style="background:rgba(90,200,250,0.2)">🃏</span><span class="bchip wc" style="border:none;background:none;padding:0">Wild Card</span></span></td>
+        <td><span class="b-status-avail">✓ Available</span></td>
+        <td class="match-ref">—</td>
+        <td class="match-pts">—</td>
+      </tr>
+      <tr>
+        <td><span class="b-name"><span class="b-icon" style="background:rgba(255,159,10,0.2)">🎯</span><span class="bchip fh" style="border:none;background:none;padding:0">Free Hit</span></span></td>
+        <td><span class="b-status-used">✗ Used</span></td>
+        <td class="match-ref"><span class="m-tag">M45</span></td>
+        <td class="match-pts">559</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ── 6. AVAKAI BIRYANI ── -->
+<div class="team-card">
+  <div class="card-header">
+    <div class="card-header-left">
+      <span class="card-rank rank-n">6</span>
+      <div>
+        <div class="card-name">Avakai Biryani</div>
+        <div class="card-pts">13,783.5 pts</div>
+      </div>
+    </div>
+    <div class="card-meta">
+      <span class="used-count">7 used</span>
+      <span class="rem-count rem-3">3 left</span>
+    </div>
+  </div>
+  <table class="booster-table">
+    <thead><tr><th>Booster</th><th>Status</th><th style="text-align:center">Match</th><th>Pts</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><span class="b-name"><span class="b-icon" style="background:rgba(95,50,220,0.2)">⚡</span><span class="bchip dp" style="border:none;background:none;padding:0">Double Power</span></span></td>
+        <td><span class="b-status-used">✗ Used ×2</span></td>
+        <td class="match-ref"><span class="m-tag">M55</span><span class="m-tag">M62</span></td>
+        <td class="match-pts">959 · <span class="pts-high">1,301</span></td>
+      </tr>
+      <tr>
+        <td><span class="b-name"><span class="b-icon" style="background:rgba(245,197,24,0.2)">👑</span><span class="bchip tc" style="border:none;background:none;padding:0">Triple Captain</span></span></td>
+        <td><span class="b-status-used">✗ Used ×2</span></td>
+        <td class="match-ref"><span class="m-tag">M42</span><span class="m-tag">M43</span></td>
+        <td class="match-pts">305.5 · 360.5</td>
+      </tr>
+      <tr>
+        <td><span class="b-name"><span class="b-icon" style="background:rgba(255,69,58,0.2)">🏏</span><span class="bchip iw" style="border:none;background:none;padding:0">Indian Warriors</span></span></td>
+        <td><span class="b-status-partial">◑ 1 left</span></td>
+        <td class="match-ref"><span class="m-tag">M40</span></td>
+        <td class="match-pts">990</td>
+      </tr>
+      <tr>
+        <td><span class="b-name"><span class="b-icon" style="background:rgba(48,209,88,0.2)">🌍</span><span class="bchip fs" style="border:none;background:none;padding:0">Foreign Stars</span></span></td>
+        <td><span class="b-status-partial">◑ 1 left</span></td>
+        <td class="match-ref"><span class="m-tag">M56</span></td>
+        <td class="match-pts">522</td>
+      </tr>
+      <tr>
+        <td><span class="b-name"><span class="b-icon" style="background:rgba(90,200,250,0.2)">🃏</span><span class="bchip wc" style="border:none;background:none;padding:0">Wild Card</span></span></td>
+        <td><span class="b-status-avail">✓ Available</span></td>
+        <td class="match-ref">—</td>
+        <td class="match-pts">—</td>
+      </tr>
+      <tr>
+        <td><span class="b-name"><span class="b-icon" style="background:rgba(255,159,10,0.2)">🎯</span><span class="bchip fh" style="border:none;background:none;padding:0">Free Hit</span></span></td>
+        <td><span class="b-status-used">✗ Used</span></td>
+        <td class="match-ref"><span class="m-tag">M59</span></td>
+        <td class="match-pts">377.5</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ── 7. ATHOS 11 ── -->
+<div class="team-card">
+  <div class="card-header">
+    <div class="card-header-left">
+      <span class="card-rank rank-n">7</span>
+      <div>
+        <div class="card-name">Athos 11</div>
+        <div class="card-pts">12,604.5 pts</div>
+      </div>
+    </div>
+    <div class="card-meta">
+      <span class="used-count">6 used</span>
+      <span class="rem-count rem-4">4 left</span>
+    </div>
+  </div>
+  <table class="booster-table">
+    <thead><tr><th>Booster</th><th>Status</th><th style="text-align:center">Match</th><th>Pts</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><span class="b-name"><span class="b-icon" style="background:rgba(95,50,220,0.2)">⚡</span><span class="bchip dp" style="border:none;background:none;padding:0">Double Power</span></span></td>
+        <td><span class="b-status-used">✗ Used ×2</span></td>
+        <td class="match-ref"><span class="m-tag">M39</span><span class="m-tag">M40</span></td>
+        <td class="match-pts">857 · <span class="pts-high">1,132</span></td>
+      </tr>
+      <tr>
+        <td><span class="b-name"><span class="b-icon" style="background:rgba(245,197,24,0.2)">👑</span><span class="bchip tc" style="border:none;background:none;padding:0">Triple Captain</span></span></td>
+        <td><span class="b-status-used">✗ Used ×2</span></td>
+        <td class="match-ref"><span class="m-tag">M42</span><span class="m-tag">M45</span></td>
+        <td class="match-pts">678.5 · 432</td>
+      </tr>
+      <tr>
+        <td><span class="b-name"><span class="b-icon" style="background:rgba(255,69,58,0.2)">🏏</span><span class="bchip iw" style="border:none;background:none;padding:0">Indian Warriors</span></span></td>
+        <td><span class="b-status-avail">✓ Both Available</span></td>
+        <td class="match-ref">—</td>
+        <td class="match-pts">—</td>
+      </tr>
+      <tr>
+        <td><span class="b-name"><span class="b-icon" style="background:rgba(48,209,88,0.2)">🌍</span><span class="bchip fs" style="border:none;background:none;padding:0">Foreign Stars</span></span></td>
+        <td><span class="b-status-partial">◑ 1 left</span></td>
+        <td class="match-ref"><span class="m-tag">M41</span></td>
+        <td class="match-pts"><span class="pts-high">1,138.5</span></td>
+      </tr>
+      <tr>
+        <td><span class="b-name"><span class="b-icon" style="background:rgba(90,200,250,0.2)">🃏</span><span class="bchip wc" style="border:none;background:none;padding:0">Wild Card</span></span></td>
+        <td><span class="b-status-used">✗ Used</span></td>
+        <td class="match-ref"><span class="m-tag">M63</span></td>
+        <td class="match-pts">369.5</td>
+      </tr>
+      <tr>
+        <td><span class="b-name"><span class="b-icon" style="background:rgba(255,159,10,0.2)">🎯</span><span class="bchip fh" style="border:none;background:none;padding:0">Free Hit</span></span></td>
+        <td><span class="b-status-avail">✓ Available</span></td>
+        <td class="match-ref">—</td>
+        <td class="match-pts">—</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</div><!-- /grid -->
+</div><!-- /page -->
+
+<div class="footer">
+  Data as of Match 70 · <a href="index.html">← Back to Dashboard</a>
+</div>
+
+</body>
+</html>
