@@ -100,6 +100,8 @@
     }
     .stage.done    { background: #d1fae5; color: #065f46; }
     .stage.done .sub { color: #059669; }
+    .stage.live    { background: #ffe5e5; color: #b91c1c; }
+    .stage.live .sub { color: #dc2626; }
     .stage.next    { background: #fef3c7; color: #92400e; }
     .stage.next .sub { color: #b45309; }
     .stage.pending { background: #e5e5ea; color: #48484a; }
@@ -249,7 +251,7 @@
       <div class="lbl">Matches Remaining</div>
     </div>
     <div class="stat-card">
-      <div class="val green">Q1 Done</div>
+      <div class="val red">&#128308; Elim Live</div>
       <div class="lbl">Playoffs Progress</div>
     </div>
     <div class="stat-card">
@@ -260,21 +262,21 @@
 
   <!-- Playoff Bracket -->
   <div class="playoff-bar">
-    <h3>Playoff Bracket &mdash; 3 matches remaining</h3>
+    <h3>Playoff Bracket &mdash; Eliminator in progress</h3>
     <div class="stages">
       <div class="stage done">
         Q1: RCB vs GT
         <span class="sub">May 25 &middot; RCB advance to Final</span>
       </div>
       <div class="arrow">&#8594;</div>
-      <div class="stage next">
-        Eliminator
+      <div class="stage live">
+        &#128308; Eliminator LIVE
         <span class="sub">SRH vs RR &middot; May 27</span>
       </div>
       <div class="arrow">&#8594;</div>
       <div class="stage pending">
         Qualifier 2
-        <span class="sub">GT vs SRH/RR &middot; TBD</span>
+        <span class="sub">GT vs winner &middot; TBD</span>
       </div>
       <div class="arrow">&#8594;</div>
       <div class="stage pending">
@@ -302,10 +304,10 @@
       </thead>
       <tbody>
 
-        <!-- 1. Assam 11 -->
+        <!-- 2. Assam 11 -->
         <tr>
-          <td><div class="team-cell"><span class="rank rk1">1</span><span class="tname">Assam 11</span></div></td>
-          <td class="r gtotal">16,592.5</td>
+          <td><div class="team-cell"><span class="rank rk2">2</span><span class="tname">Assam 11</span></div></td>
+          <td class="r gtotal">17,220.0</td>
           <td class="top b-partial">
             <div class="b-val">1,186 (1,186)</div>
             <div class="b-left">&#10003; 1 left</div>
@@ -326,10 +328,10 @@
           <td><div class="b-val">543.5</div></td>
         </tr>
 
-        <!-- 2. Lost XI -->
+        <!-- 1. Lost XI -->
         <tr>
-          <td><div class="team-cell"><span class="rank rk2">2</span><span class="tname">Lost XI</span></div></td>
-          <td class="r gtotal">16,462.5</td>
+          <td><div class="team-cell"><span class="rank rk1">1</span><span class="tname">Lost XI</span></div></td>
+          <td class="r gtotal">17,236.5</td>
           <td class="top">
             <div class="b-val">2,070</div>
             <div class="b-sub">(1,311, 759)</div>
@@ -353,7 +355,7 @@
         <!-- 3. Debba meeda debba -->
         <tr>
           <td><div class="team-cell"><span class="rank rk3">3</span><span class="tname">Debba meeda debba</span></div></td>
-          <td class="r gtotal">16,448.5</td>
+          <td class="r gtotal">17,009.5</td>
           <td class="top b-partial">
             <div class="b-val">928 (928)</div>
             <div class="b-left">&#10003; 1 left</div>
@@ -377,7 +379,7 @@
         <!-- 4. Leftover Challengers -->
         <tr>
           <td><div class="team-cell"><span class="rank rkn">4</span><span class="tname">Leftover Challengers</span></div></td>
-          <td class="r gtotal">15,988.5</td>
+          <td class="r gtotal">16,626.5</td>
           <td class="top">
             <div class="b-val">1,910</div>
             <div class="b-sub">(724, 1,186)</div>
@@ -401,7 +403,7 @@
         <!-- 5. Just for friendship -->
         <tr>
           <td><div class="team-cell"><span class="rank rkn">5</span><span class="tname">Just for friendship</span></div></td>
-          <td class="r gtotal">15,015.5</td>
+          <td class="r gtotal">15,644.5</td>
           <td class="top">
             <div class="b-val">2,220</div>
             <div class="b-sub">(958, 1,262)</div>
@@ -425,7 +427,7 @@
         <!-- 6. Avakai Biryani -->
         <tr>
           <td><div class="team-cell"><span class="rank rkn">6</span><span class="tname">Avakai Biryani</span></div></td>
-          <td class="r gtotal">14,919.5</td>
+          <td class="r gtotal">15,404.5</td>
           <td class="top">
             <div class="b-val">2,126</div>
             <div class="b-sub">(990, 1,136)</div>
@@ -455,7 +457,7 @@
               <span class="me-badge">me</span>
             </div>
           </td>
-          <td class="r gtotal">13,649.5</td>
+          <td class="r gtotal">14,003.5</td>
           <td class="top b-partial">
             <div class="b-val">1,045 (1,045)</div>
             <div class="b-left">&#10003; 1 left</div>
@@ -491,57 +493,65 @@
           <th class="r">League Score &nbsp;<span style="font-weight:500;color:#8e8e93">(M39&ndash;M70)</span></th>
           <th class="r">Playoff Total</th>
           <th>Q1: RCB vs GT (May 25)</th>
+          <th>Eliminator: SRH vs RR (May 27) &#128308; Live</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td><div class="team-cell"><span class="rank rk1">1</span><span class="tname">Assam 11</span></div></td>
-          <td class="r gtotal">16,592.5</td>
-          <td class="r" style="color:#3a3a3c;font-weight:500">15,406.5</td>
-          <td class="r p-score">+1,186</td>
-          <td>1,186 <span class="p-note">&#127470;&#127475; Indian Warriors &times;2</span></td>
+          <td><div class="team-cell"><span class="rank rk1">1</span><span class="tname">Lost XI</span></div></td>
+          <td class="r gtotal">17,236.5</td>
+          <td class="r" style="color:#3a3a3c;font-weight:500">15,905</td>
+          <td class="r p-score">+1,331.5</td>
+          <td>557.5 <span class="p-plain">No booster</span></td>
+          <td>774 <span class="p-note">&#127919; Free Hit &times;2</span></td>
         </tr>
         <tr>
-          <td><div class="team-cell"><span class="rank rk2">2</span><span class="tname">Lost XI</span></div></td>
-          <td class="r gtotal">16,462.5</td>
-          <td class="r" style="color:#3a3a3c;font-weight:500">15,905</td>
-          <td class="r p-score">+557.5</td>
-          <td>557.5 <span class="p-plain">No booster (only FH remaining)</span></td>
+          <td><div class="team-cell"><span class="rank rk2">2</span><span class="tname">Assam 11</span></div></td>
+          <td class="r gtotal">17,220.0</td>
+          <td class="r" style="color:#3a3a3c;font-weight:500">15,406.5</td>
+          <td class="r p-score">+1,813.5</td>
+          <td>1,186 <span class="p-note">&#127470;&#127475; Indian Warriors &times;2</span></td>
+          <td>627.5 <span class="p-note">&#127183; WildCard</span></td>
         </tr>
         <tr>
           <td><div class="team-cell"><span class="rank rk3">3</span><span class="tname">Debba meeda debba</span></div></td>
-          <td class="r gtotal">16,448.5</td>
+          <td class="r gtotal">17,009.5</td>
           <td class="r" style="color:#3a3a3c;font-weight:500">15,743</td>
-          <td class="r p-score">+705.5</td>
-          <td>705.5 <span class="p-plain">No booster used</span></td>
+          <td class="r p-score">+1,266.5</td>
+          <td>705.5 <span class="p-plain">No booster</span></td>
+          <td>561 <span class="p-note">&#127919; Free Hit &times;2</span></td>
         </tr>
         <tr>
           <td><div class="team-cell"><span class="rank rkn">4</span><span class="tname">Leftover Challengers</span></div></td>
-          <td class="r gtotal">15,988.5</td>
+          <td class="r gtotal">16,626.5</td>
           <td class="r" style="color:#3a3a3c;font-weight:500">14,802.5</td>
-          <td class="r p-score">+1,186</td>
+          <td class="r p-score">+1,824</td>
           <td>1,186 <span class="p-note">&#127470;&#127475; Indian Warriors &times;2</span></td>
+          <td>638 <span class="p-note">&#127919; Free Hit &times;2</span></td>
         </tr>
         <tr>
           <td><div class="team-cell"><span class="rank rkn">5</span><span class="tname">Just for friendship</span></div></td>
-          <td class="r gtotal">15,015.5</td>
+          <td class="r gtotal">15,644.5</td>
           <td class="r" style="color:#3a3a3c;font-weight:500">14,523.5</td>
-          <td class="r p-score">+492</td>
-          <td>492 <span class="p-plain">No booster used</span></td>
+          <td class="r p-score">+1,121</td>
+          <td>492 <span class="p-plain">No booster</span></td>
+          <td>629 <span class="p-note">&#127183; WildCard</span></td>
         </tr>
         <tr>
           <td><div class="team-cell"><span class="rank rkn">6</span><span class="tname">Avakai Biryani</span></div></td>
-          <td class="r gtotal">14,919.5</td>
+          <td class="r gtotal">15,404.5</td>
           <td class="r" style="color:#3a3a3c;font-weight:500">13,783.5</td>
-          <td class="r p-score">+1,136</td>
+          <td class="r p-score">+1,621</td>
           <td>1,136 <span class="p-note">&#127470;&#127475; Indian Warriors &times;2</span></td>
+          <td>485 <span class="p-plain">No booster</span></td>
         </tr>
         <tr>
           <td><div class="team-cell"><span class="rank rkn">7</span><span class="tname">Athos 11</span><span class="me-badge">me</span></div></td>
-          <td class="r gtotal">13,649.5</td>
+          <td class="r gtotal">14,003.5</td>
           <td class="r" style="color:#3a3a3c;font-weight:500">12,604.5</td>
-          <td class="r p-score">+1,045</td>
-          <td>1,045 <span class="p-note">&#127470;&#127475; Indian Warriors &times;2 (manual calc)</span></td>
+          <td class="r p-score">+1,399</td>
+          <td>1,045 <span class="p-note">&#127470;&#127475; Indian Warriors &times;2</span></td>
+          <td>354 <span class="p-note">&#127919; Free Hit &times;2 (live)</span></td>
         </tr>
       </tbody>
     </table>
@@ -550,7 +560,7 @@
 </div>
 
 <div class="footer">
-  Updated May 26, 2026 &nbsp;&middot;&nbsp; After Q1: RCB vs GT &nbsp;&middot;&nbsp; League stage M39&ndash;M70 complete
+  Updated May 27, 2026 &nbsp;&middot;&nbsp; Eliminator live: SRH vs RR &nbsp;&middot;&nbsp; League stage M39&ndash;M70 complete
 </div>
 
 </body>
