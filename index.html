@@ -224,14 +224,55 @@
       padding: 16px;
     }
 
+    /* ── Winner Banner ── */
+    .winner-banner {
+      background: linear-gradient(135deg, #1a472a 0%, #2d6a4f 40%, #1a472a 100%);
+      color: #fff;
+      padding: 20px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      text-align: center;
+      border-bottom: 3px solid #f9c22e;
+    }
+    .winner-title {
+      font-size: 1.6rem;
+      font-weight: 800;
+      letter-spacing: -0.4px;
+      color: #f9c22e;
+      text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+    }
+    .winner-sub {
+      font-size: 0.88rem;
+      color: #d4f1d4;
+      margin-top: 4px;
+      letter-spacing: 0.2px;
+    }
+    .winner-confetti {
+      font-size: 2.2rem;
+      flex-shrink: 0;
+    }
+
     @media (max-width: 800px) {
       .header h1 { font-size: 1.25rem; }
       .quick-stats { flex-direction: column; }
       .stages { flex-wrap: wrap; gap: 4px; }
+      .winner-title { font-size: 1.2rem; }
+      .winner-confetti { font-size: 1.6rem; }
     }
   </style>
 </head>
 <body>
+
+<div class="winner-banner">
+  <div class="winner-confetti">&#127881;</div>
+  <div class="winner-text">
+    <div class="winner-title">Congratulations Srikanth !!!</div>
+    <div class="winner-sub">Assam 11 &nbsp;&middot;&nbsp; Fantasy Legends Champion &nbsp;&middot;&nbsp; IPL 2026 &nbsp;&middot;&nbsp; 18,712 pts</div>
+  </div>
+  <div class="winner-confetti">&#127881;</div>
+</div>
 
 <div class="header">
   <h1>Fantasy IPL 2026 — Booster Tracker</h1>
