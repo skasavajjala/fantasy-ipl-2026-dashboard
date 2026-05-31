@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Fantasy IPL 2026 — Awards</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #0a0a12;
+      color: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      padding-bottom: 48px;
+    }
+
+    /* ── Page header ── */
+    .page-header {
+      background: linear-gradient(160deg, #1a003a 0%, #0b1836 60%, #0a0a12 100%);
+      padding: 36px 20px 26px;
+      text-align: center;
+      border-bottom: 2px solid #f9c22e;
+    }
+    .page-header .trophy { font-size: 2.8rem; display: block; margin-bottom: 8px; }
+    .page-header h1 { font-size: 1.55rem; font-weight: 900; color: #f9c22e; letter-spacing: -0.5px; }
+    .page-header p { font-size: 0.82rem; color: #8e8e93; margin-top: 5px; letter-spacing: 0.5px; text-transform: uppercase; }
+    .back-link {
+      display: inline-block;
+      margin-top: 14px;
+      color: #636366;
+      font-size: 0.78rem;
+      text-decoration: none;
+      border: 1px solid #2c2c3a;
+      padding: 5px 14px;
+      border-radius: 20px;
+    }
+
+    /* ── Grid ── */
+    .awards-grid {
+      padding: 20px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    /* ── Award card ── */
+    .award-card {
+      border-radius: 18px;
+      overflow: hidden;
+      position: relative;
+    }
+    .award-inner {
+      padding: 22px 22px 20px;
+    }
+
+    .award-label {
+      font-size: 0.68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      opacity: 0.75;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .award-emoji { font-size: 1.15rem; }
+
+    .winner-name {
+      font-size: 2.1rem;
+      font-weight: 900;
+      letter-spacing: -1.5px;
+      line-height: 1;
+      margin-top: 8px;
+    }
+    .team-name {
+      font-size: 0.82rem;
+      font-weight: 500;
+      opacity: 0.72;
+      margin-top: 3px;
+    }
+
+    .score-row {
+      display: flex;
+      align-items: baseline;
+      gap: 7px;
+      margin-top: 12px;
+    }
+    .score-pts {
+      font-size: 1.6rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    .score-unit {
+      font-size: 0.75rem;
+      font-weight: 600;
+      opacity: 0.65;
+    }
+    .score-break {
+      font-size: 0.7rem;
+      opacity: 0.55;
+      margin-top: 3px;
+    }
+
+    /* ── Color themes ── */
+
+    /* 1 — Champion: gold */
+    .c-champion {
+      background: linear-gradient(135deg, #3d1f00 0%, #7a4300 50%, #b36200 100%);
+      border: 2px solid #f9c22e;
+    }
+    .c-champion .award-label { color: #ffd97a; }
+    .c-champion .winner-name { color: #fff5cc; }
+    .c-champion .score-pts { color: #f9c22e; }
+
+    /* 2 — Runner: silver-blue */
+    .c-runner {
+      background: linear-gradient(135deg, #12122a 0%, #252554 100%);
+      border: 2px solid #8888cc;
+    }
+    .c-runner .award-label { color: #aaaaee; }
+    .c-runner .winner-name { color: #dde0ff; }
+    .c-runner .score-pts { color: #aaaaee; }
+
+    /* 3 — Highest match: electric blue */
+    .c-highest {
+      background: linear-gradient(135deg, #001a3d 0%, #003380 100%);
+      border: 2px solid #48cae4;
+    }
+    .c-highest .award-label { color: #80dcf0; }
+    .c-highest .winner-name { color: #d0f4fc; }
+    .c-highest .score-pts { color: #48cae4; }
+
+    /* 4 — League King: emerald */
+    .c-league {
+      background: linear-gradient(135deg, #002200 0%, #004d00 100%);
+      border: 2px solid #57cc99;
+    }
+    .c-league .award-label { color: #88e8b8; }
+    .c-league .winner-name { color: #d4f8e8; }
+    .c-league .score-pts { color: #57cc99; }
+
+    /* 5 — Playoff MVP: purple */
+    .c-playoff {
+      background: linear-gradient(135deg, #1e0040 0%, #5200b3 100%);
+      border: 2px solid #c77dff;
+    }
+    .c-playoff .award-label { color: #d9a8ff; }
+    .c-playoff .winner-name { color: #f0d8ff; }
+    .c-playoff .score-pts { color: #c77dff; }
+
+    /* 6 — Indian Warriors: tricolor blue */
+    .c-iw {
+      background: linear-gradient(135deg, #001f4d 0%, #004db3 100%);
+      border: 2px solid #5599ff;
+    }
+    .c-iw .award-label { color: #99bbff; }
+    .c-iw .winner-name { color: #d6e8ff; }
+    .c-iw .score-pts { color: #5599ff; }
+
+    /* 7 — Foreign Stars: lime green */
+    .c-foreign {
+      background: linear-gradient(135deg, #0a1f00 0%, #266600 100%);
+      border: 2px solid #a8e63d;
+    }
+    .c-foreign .award-label { color: #ccf57a; }
+    .c-foreign .winner-name { color: #e8fcc0; }
+    .c-foreign .score-pts { color: #a8e63d; }
+
+    /* 8 — Double Power: hot pink */
+    .c-double {
+      background: linear-gradient(135deg, #330011 0%, #8c0033 100%);
+      border: 2px solid #ff5599;
+    }
+    .c-double .award-label { color: #ffaac9; }
+    .c-double .winner-name { color: #ffe0ec; }
+    .c-double .score-pts { color: #ff5599; }
+
+    /* 9 — Triple Cap: yellow-green */
+    .c-triple {
+      background: linear-gradient(135deg, #1a2200 0%, #4d6600 100%);
+      border: 2px solid #d4e63d;
+    }
+    .c-triple .award-label { color: #e8f57a; }
+    .c-triple .winner-name { color: #f5fac8; }
+    .c-triple .score-pts { color: #d4e63d; }
+
+    /* 10 — Wild Card: magenta */
+    .c-wildcard {
+      background: linear-gradient(135deg, #240024 0%, #660066 100%);
+      border: 2px solid #e040e0;
+    }
+    .c-wildcard .award-label { color: #f0a0f0; }
+    .c-wildcard .winner-name { color: #fad8fa; }
+    .c-wildcard .score-pts { color: #e040e0; }
+
+    /* 11 — Free Hit: sky blue */
+    .c-freehit {
+      background: linear-gradient(135deg, #001833 0%, #004080 100%);
+      border: 2px solid #40aaff;
+    }
+    .c-freehit .award-label { color: #99ccff; }
+    .c-freehit .winner-name { color: #cce8ff; }
+    .c-freehit .score-pts { color: #40aaff; }
+
+    /* ── Section divider ── */
+    .section-label {
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #444455;
+      padding: 6px 4px 2px;
+    }
+
+    /* ── Footer ── */
+    .page-footer {
+      text-align: center;
+      padding: 12px 20px 0;
+      font-size: 0.72rem;
+      color: #3a3a4a;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page-header">
+    <span class="trophy">🏅</span>
+    <h1>Fantasy IPL 2026 — Awards</h1>
+    <p>Fantasy Legends · Season Complete</p>
+    <a href="index.html" class="back-link">← Dashboard</a>
+  </div>
+
+  <div class="awards-grid">
+
+    <!-- ── Overall ── -->
+    <div class="section-label">Overall</div>
+
+    <div class="award-card c-champion">
+      <div class="award-inner">
+        <div class="award-label"><span class="award-emoji">🏆</span> Fantasy Champion</div>
+        <div class="winner-name">Srikanth</div>
+        <div class="team-name">Assam 11</div>
+        <div class="score-row">
+          <span class="score-pts">18,828</span>
+          <span class="score-unit">pts</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="award-card c-runner">
+      <div class="award-inner">
+        <div class="award-label"><span class="award-emoji">🥈</span> Fantasy Runner Up</div>
+        <div class="winner-name">Jags</div>
+        <div class="team-name">Debba meeda debba</div>
+        <div class="score-row">
+          <span class="score-pts">18,565</span>
+          <span class="score-unit">pts</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Special ── -->
+    <div class="section-label">Special</div>
+
+    <div class="award-card c-highest">
+      <div class="award-inner">
+        <div class="award-label"><span class="award-emoji">⚡</span> Highest Single Match</div>
+        <div class="winner-name">Sasi</div>
+        <div class="team-name">Lost XI · Double ×2</div>
+        <div class="score-row">
+          <span class="score-pts">1,629</span>
+          <span class="score-unit">pts</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="award-card c-league">
+      <div class="award-inner">
+        <div class="award-label"><span class="award-emoji">📊</span> League Season King</div>
+        <div class="winner-name">Sasi</div>
+        <div class="team-name">Lost XI · M39–M70</div>
+        <div class="score-row">
+          <span class="score-pts">15,905</span>
+          <span class="score-unit">pts</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="award-card c-playoff">
+      <div class="award-inner">
+        <div class="award-label"><span class="award-emoji">🚀</span> Playoff MVP</div>
+        <div class="winner-name">Santhosh</div>
+        <div class="team-name">Athos 11 · Q1 + Elim + Q2 + Final</div>
+        <div class="score-row">
+          <span class="score-pts">3,791</span>
+          <span class="score-unit">pts</span>
+        </div>
+        <div class="score-break">1,045 · 781 · 967 · 998</div>
+      </div>
+    </div>
+
+    <!-- ── Booster Kings ── -->
+    <div class="section-label">Booster Kings</div>
+
+    <div class="award-card c-iw">
+      <div class="award-inner">
+        <div class="award-label"><span class="award-emoji">🇮🇳</span> Indian Warriors ×2 King</div>
+        <div class="winner-name">Susri</div>
+        <div class="team-name">Just for friendship · 2 uses</div>
+        <div class="score-row">
+          <span class="score-pts">2,220</span>
+          <span class="score-unit">pts</span>
+        </div>
+        <div class="score-break">958 + 1,262</div>
+      </div>
+    </div>
+
+    <div class="award-card c-foreign">
+      <div class="award-inner">
+        <div class="award-label"><span class="award-emoji">🌍</span> Foreign Stars ×2 King</div>
+        <div class="winner-name">Santhosh</div>
+        <div class="team-name">Athos 11 · 2 uses</div>
+        <div class="score-row">
+          <span class="score-pts">2,105.5</span>
+          <span class="score-unit">pts</span>
+        </div>
+        <div class="score-break">1,138.5 + 967</div>
+      </div>
+    </div>
+
+    <div class="award-card c-double">
+      <div class="award-inner">
+        <div class="award-label"><span class="award-emoji">⚡⚡</span> Double Power ×2 King</div>
+        <div class="winner-name">Jags</div>
+        <div class="team-name">Debba meeda debba · 2 uses</div>
+        <div class="score-row">
+          <span class="score-pts">2,792</span>
+          <span class="score-unit">pts</span>
+        </div>
+        <div class="score-break">1,271 + 1,521</div>
+      </div>
+    </div>
+
+    <div class="award-card c-triple">
+      <div class="award-inner">
+        <div class="award-label"><span class="award-emoji">👑</span> Triple Cap ×2 King</div>
+        <div class="winner-name">Santhosh</div>
+        <div class="team-name">Athos 11 · 2 uses</div>
+        <div class="score-row">
+          <span class="score-pts">1,110.5</span>
+          <span class="score-unit">pts</span>
+        </div>
+        <div class="score-break">678.5 + 432</div>
+      </div>
+    </div>
+
+    <div class="award-card c-wildcard">
+      <div class="award-inner">
+        <div class="award-label"><span class="award-emoji">🃏</span> Wild Card King</div>
+        <div class="winner-name">Yash</div>
+        <div class="team-name">Leftover Challengers</div>
+        <div class="score-row">
+          <span class="score-pts">804.5</span>
+          <span class="score-unit">pts</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="award-card c-freehit">
+      <div class="award-inner">
+        <div class="award-label"><span class="award-emoji">🎯</span> Free Hit King</div>
+        <div class="winner-name">Sasi</div>
+        <div class="team-name">Lost XI</div>
+        <div class="score-row">
+          <span class="score-pts">821</span>
+          <span class="score-unit">pts</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="page-footer">Fantasy Legends · IPL 2026 · Season Complete</div>
+
+</body>
+</html>
